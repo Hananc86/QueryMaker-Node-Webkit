@@ -1,0 +1,1 @@
+set PATH=%PATH%;C:\%HOMEPATH%\QueryMakerNodeWebKit\Accessories\putty;;C:\%HOMEPATH%\QueryMakerNodeWebKit\Accessories\hosts;;C:\Program Files (x86)\WinSCP;;C:\%HOMEPATH%\QueryMakerNodeWebKit\Accessories\WinSCP-5.9.3-Portable;;C:\%HOMEPATH%\QueryMakerNodeWebKit\Accessories\node; && hosts add 5.100.250.63 apple.OptionFair.com  qa-apple.OptionFair.com

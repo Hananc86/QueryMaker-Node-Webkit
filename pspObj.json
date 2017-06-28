@@ -1,0 +1,170 @@
+{
+  "Wire": {
+    "pspId": "93",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "Moneybookers": {
+    "pspId": "95",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "API": {
+    "pspId": "146",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "Inatec_3D": {
+    "pspId": "278",
+    "merchantParameters": "",
+    "merchantId": "techfinancials_test",
+    "merchantKey": "1fc3"
+  },
+  "Inatec3D Cysec": {
+    "pspId": "279",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "Fibonatix": {
+    "pspId": "282",
+    "merchantParameters": "F2F13B23-1527-40AE-9FEC-5C6F2A48D823",
+    "merchantId": "tech-financials\\;1",
+    "merchantKey": "LLBfB97S"
+  },
+  "Fibonatix Cysec": {
+    "pspId": "283",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "SafeCharge": {
+    "pspId": "300",
+    "merchantParameters": "",
+    "merchantId": "247HoldGTestTRX",
+    "merchantKey": "Fb53jhqpug"
+  },
+  "SafeChargePP": {
+    "pspId": "306",
+    "merchantParameters": "https://ppp-test.safecharge.com/ppp/purchase.do",
+    "merchantId": "3841116170786489711\\;48431",
+    "merchantKey": "wnC9NuDrYhcDeoLC7CuQGOLemXNuWcPqyDAj6XVWO9JxnZAseCM6W4QlZwkInxTP"
+  },
+  "Neteller": {
+    "pspId": "308",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "Inatec": {
+    "pspId": "314",
+    "merchantParameters": "",
+    "merchantId": "techfinancials_test",
+    "merchantKey": "1fc3"
+  },
+  "Wire Cysec": {
+    "pspId": "2665",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "AllCharge Cysec": {
+    "pspId": "2669",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "API Cysec": {
+    "pspId": "2670",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "SafeCharge Cysec": {
+    "pspId": "2683",
+    "merchantParameters": "",
+    "merchantId": "247HoldGTestTRX",
+    "merchantKey": "Fb53jhqpug"
+  },
+  "AlgoCharge Cysec": {
+    "pspId": "2688",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "SafeChargePP Cysec": {
+    "pspId": "2689",
+    "merchantParameters": "https://ppp-test.safecharge.com/ppp/purchase.do",
+    "merchantId": "3841116170786489711\\;48431",
+    "merchantKey": "wnC9NuDrYhcDeoLC7CuQGOLemXNuWcPqyDAj6XVWO9JxnZAseCM6W4QlZwkInxTP"
+  },
+  "Inatec_cysec": {
+    "pspId": "2693",
+    "merchantParameters": "",
+    "merchantId": "techfinancials_test",
+    "merchantKey": "1fc3"
+  },
+  "EMerchantPay": {
+    "pspId": "2701",
+    "merchantParameters": "https://my.emerchantpay.com/service/vbvmc3d\\;1\\;https://my.emerchantpay.com/service/vbvmc3d/result\\;https://my.emerchantpay.com/service/order/submit\\;1",
+    "merchantId": "787452",
+    "merchantKey": "1gIHA1TzaIm0VJCq6cmo"
+  },
+  "Sofort": {
+    "pspId": "2724",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "DoughFlow": {
+    "pspId": "2747",
+    "merchantParameters": "TechFinancialsTEST USD\\;TechFinancials TEST EUR",
+    "merchantId": "https://cashier.praxispay.com/Login.asp",
+    "merchantKey": "techQATESTkey"
+  },
+  "EmerchantPay_Cysec": {
+    "pspId": "2748",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "EmerchantPay2": {
+    "pspId": "2811",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+    "EmerchantPay3D": {
+    "pspId": "2825",
+    "merchantParameters": "https://my.emerchantpay.com/service/vbvmc3d\\;1\\;https://my.emerchantpay.com/service/vbvmc3d/result\\;https://my.emerchantpay.com/service/order/submit",
+    "merchantId": "787452",
+    "merchantKey": "1gIHA1TzaIm0VJCq6cmo"
+  },
+  "Fibonatix_3D": {
+    "pspId": "2812",
+    "merchantParameters": "835\\;F2F13B23-1527-40AE-9FEC-5C6F2A48D823",
+    "merchantId": "tech-financials",
+    "merchantKey": ""
+  },
+  "Fibonatix_3D_cysec": {
+    "pspId": "2813",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "DinpayPP": {
+    "pspId": "2816",
+    "merchantParameters": "https://pay.dinpay.com/gateway?input_charset=UTF-8",
+    "merchantId": "1111110166",
+    "merchantKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCWOq5aHSTvdxGPDKZWSl6wrPpnMHW+8lOgVU71jB2vFGuA6dwa/RpJKnz9zmoGryZlgUmfHANnN0uztkgwb+5mpgmegBbNLuGqqHBpQHo2EsiAhgvgO3VRmWC8DARpzNxknsJTBhkUvZdy4GyrjnUrvsARg4VrFzKDWL0Yu3gunQIDAQAB\\;MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBALf/+xHa1fDTCsLYPJLHy80aWq3djuV1T34sEsjp7UpLmV9zmOVMYXsoFNKQIcEzei4QdaqnVknzmIl7n1oXmAgHaSUF3qHjCttscDZcTWyrbXKSNr8arHv8hGJrfNB/Ea/+oSTIY7H5cAtWg6VmoPCHvqjafW8/UP60PdqYewrtAgMBAAECgYEAofXhsyK0RKoPg9jA4NabLuuuu/IU8ScklMQIuO8oHsiStXFUOSnVeImcYofaHmzIdDmqyU9IZgnUz9eQOcYg3BotUdUPcGgoqAqDVtmftqjmldP6F6urFpXBazqBrrfJVIgLyNw4PGK6/EmdQxBEtqqgXppRv/ZVZzZPkwObEuECQQDenAam9eAuJYveHtAthkusutsVG5E3gJiXhRhoAqiSQC9mXLTgaWV7zJyA5zYPMvh6IviX/7H+Bqp14lT9wctFAkEA05ljSYShWTCFThtJxJ2d8zq6xCjBgETAdhiH85O/VrdKpwITV/6psByUKp42IdqMJwOaBgnnct8iDK/TAJLniQJABdo+RodyVGRCUB2pRXkhZjInbl+iKr5jxKAIKzveqLGtTViknL3IoD+Z4b2yayXg6H0g4gYj7NTKCH1h1KYSrQJBALbgbcg/YbeU0NF1kibk1ns9+ebJFpvGT9SBVRZ2TjsjBNkcWR2HEp8LxB6lSEGwActCOJ8Zdjh4kpQGbcWkMYkCQAXBTFiyyImO+sfCccVuDSsWS+9jrc5KadHGIvhfoRjIj2VuUKzJ+mXbmXuXnOYmsAefjnMCI6gGtaqkzl527tw="
+  },
+  "ZotaPayPP": {
+    "pspId": "2824",
+    "merchantParameters": "https://sandbox.zotapay.com/paynet/api/v2/sale-form/group/",
+    "merchantId": "85",
+    "merchantKey": "CDAC5452-726A-4D2A-96B9-0A9284BEF5C3"
+  }
+}

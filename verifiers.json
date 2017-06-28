@@ -1,0 +1,32 @@
+
+
+function verifiersMaker (langArr) {
+         var verifiers = {
+            "en":"a-zA-z",
+            "ar":"\\u0620-\\u064A\\u066E\\u066F\\u0671-\\u06D3\\u06D5\\u06E5\\u06E6\\u06EE\\u06EF\\u06FA-\\u06FC\\u06FF",
+            "de":"ÄäÉéÖöÜüß",
+            "es":"ÁáÉéÍíÑñÓóÚúÜü",
+            "fr":"ÀàÂâÆæÇçÈèÉéÊêËëÎîÏïÔôŒœÙùÛûÜü",
+            "he":"\\u05D0-\\u05EA\\u05F0-\\u05F2",
+            "it":"ÀàÁáÈèÉéÌìÍíÒòÓóÙùÚú",
+            "ja":"\\u3041-\\u3096\\u309D-\\u309F\\u30A1-\\u30FA\u30FC-\\u30FF",
+            "pt":"ÀÁÂÃÇÉÊÍÓÔÕÚàáâãçéêíóôõú",
+            "ru":"А-яЁё",
+            "tr":"ÇÖÜçöüĞğŞş",
+            "zh":"\\u4E00-\\u9FFF"
+         }
+             var result = "";
+             for(i=0; i<langArr.length; i++){
+                 result+=verifiers[langArr[i].toLowerCase()]
+             }
+         
+         return "<?xml version=\"1.0\"?>"+
+         "<Verifications>"+
+         "<Veirfy max-length=\"30\" numeric=\"false\" expression=\"["+result+"]+\" mask=\"\" required=\"true\" name=\"firstName\"/>"+
+         "<Veirfy max-length=\"30\" numeric=\"false\" expression=\"["+result+"]+\" mask=\"\" required=\"true\" name=\"lastName\"/>"+
+         "<Veirfy max-length=\"30\" numeric=\"false\" expression=\"["+result+"]+\" mask=\"\" required=\"true\" name=\"mobileFirstName\"/>"+
+         "<Veirfy max-length=\"30\" numeric=\"false\" expression=\"["+result+"]+\" mask=\"\" required=\"true\" name=\"mobileLastName\"/>"+
+         "</Verifications>"
+
+}
+

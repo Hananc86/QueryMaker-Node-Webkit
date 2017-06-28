@@ -1,0 +1,22 @@
+{
+  "name": "querymaker",
+  "version": "2.2.0",
+  "description": "Query Maker Tool Is For Back Office Configuration",
+  "main": "index.html",
+  "dependencies": {
+    "browser-sync": "*",
+    "node-cmd": "^1.2.0",
+    "node-reg": "^0.2.4",
+    "path": "^0.12.7",
+    "windows-shortcuts": "^0.1.4",
+    "winreg": "^1.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nw ."
+  },
+
+  "author": "Hanan Cohen",
+  "license": "ISC"
+}

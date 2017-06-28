@@ -1,0 +1,1 @@
+(winscp.com /command "open sftp://hananc:cohen100@apple"  "call who > connected.txt" "get connected.txt -neweronly" "exit")

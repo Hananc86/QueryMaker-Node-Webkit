@@ -1,0 +1,1 @@
+cd C:\Users\Hananc\QueryMaker\js\&& del main.js

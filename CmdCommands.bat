@@ -1,0 +1,1 @@
+start firefox "http://localhost:3000/app"-incognito "http://localhost:3001" -incognito 

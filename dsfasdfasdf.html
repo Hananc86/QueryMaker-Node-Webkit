@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Typing animation using CSS</title>
+  
+  
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body{
+  background: #000;
+  padding-top: 10px;
+} 
+
+p{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 60em;
+  animation: type 4s steps(60, end); 
+}
+
+
+.1 {
+
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 60em;
+  animation: type 4s steps(60, end); 
+
+}
+
+.2 {
+
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 60em;
+  animation: type 4s steps(60, end); 
+
+}
+
+.3 {
+
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 60em;
+  animation: type 4s steps(60, end); 
+
+}
+
+p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+p a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+                                   <p class"1">***This app was written with Node.js ***</p>
+
+                                   <p class="2" >Query Maker 2.2 </p>
+                                    <p class = "3">This Version allows the user to configure PSP's, languages, Forex, Tokenization, ShortCC, Open Position Commission and Regulation.</p>
+                                    The user can also use Browser-Sync with 1 click from the app.
+                                    Behind the scenes it will access to conf.properties file and check if the required brand_id exists in “brands.values”.
+                                    In addition it creates a Bonus template for the user and allows the user to choose from common used applications/commands like restart the server, open a terminal to server, BackOffice, Mobile-Web, Open Browser.
+                                    "Set default brand id" button allows the user to change the default id of the server. 
+                                    It also provides services like Insightly, Jira, Help Center and RunDeck from the menu bar.
+
+
+                                    ***** Please let me know of any bugs/issues or feature requests.*****
+
+
+
+                                    Special Thanks To Yaakov Wizman for his  help! :)
+
+                                </p>
+  <!-- <a href="https://twitter.com/@samarkandiy" title="Azik Samarkandiy">@samarkandiy</a>  -->
+>
+  
+   
+
+</body>
+</html>

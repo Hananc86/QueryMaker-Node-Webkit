@@ -1,0 +1,126 @@
+{
+  "arabic": {
+    "id": 151,
+    "iso": "ar"
+  },
+  "spanish": {
+    "id": 152,
+    "iso": "es"
+  },
+  "russian": {
+    "id": 153,
+    "iso": "ru"
+  },
+  "portuguese": {
+    "id": 154,
+    "iso": "pt"
+  },
+  "romanian": {
+    "id": 155,
+    "iso": "ro"
+  },
+  "hebrew": {
+    "id": 156,
+    "iso": "he"
+  },
+  "french": {
+    "id": 158,
+    "iso": "fr"
+  },
+  "turkish": {
+    "id": 159,
+    "iso": "tr"
+  },
+  "italian": {
+    "id": 170,
+    "iso": "it"
+  },
+  "german": {
+    "id": 171,
+    "iso": "de"
+  },
+  "indonesian": {
+    "id": 238,
+    "iso": "id"
+  },
+  "danish": {
+    "id": 254,
+    "iso": "danish"
+  },
+  "finnish": {
+    "id": 255,
+    "iso": "fi"
+  },
+  "norwegian": {
+    "id": 256,
+    "iso": "no"
+  },
+  "swedish": {
+    "id": 257,
+    "iso": "se"
+  },
+  "latvian": {
+    "id": 286,
+    "iso": "lv"
+  },
+  "korean": {
+    "id": 287,
+    "iso": "kr"
+  },
+  "thai": {
+    "id": 290,
+    "iso": "th"
+  },
+  "hungarian": {
+    "id": 1677,
+    "iso": "hu"
+  },
+  "polish": {
+    "id": 2698,
+    "iso": "pl"
+  },
+  "czech": {
+    "id": 2699,
+    "iso": "cz"
+  },
+  "malaysian": {
+    "id": 2700,
+    "iso": "my"
+  },
+  "dutch": {
+    "id": 2702,
+    "iso": "du"
+  },
+  "greek": {
+    "id": 2705,
+    "iso": "gr"
+  },
+  "hindi": {
+    "id": 2706,
+    "iso": "in"
+  },
+  "vietnamese": {
+    "id": 2710,
+    "iso": "vn"
+  },
+  "lithuanian": {
+    "id": 2711,
+    "iso": "lt"
+  },
+  "traditional Chinese": {
+    "id": 2815,
+    "iso": "zht"
+  },
+  "english": {
+    "id": 150,
+    "iso": "en"
+  },
+  "chinese": {
+    "id": 285,
+    "iso": "zh"
+  },
+  "japanese": {
+    "id": 157,
+    "iso": "ja"
+  }
+}

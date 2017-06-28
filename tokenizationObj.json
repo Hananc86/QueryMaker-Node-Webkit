@@ -1,0 +1,98 @@
+{
+  "Fibonatix": {
+    "pspId": "282",
+    "merchantParameters": "F2F13B23-1527-40AE-9FEC-5C6F2A48D823",
+    "merchantId": "tech-financials\\;1",
+    "merchantKey": "LLBfB97S"
+  },
+  "PayVision": {
+    "pspId": "94",
+    "merchantParameters": "",
+    "merchantId": "1001745",
+    "merchantKey": "saf"
+  },
+  "DataCash": {
+    "pspId": "202",
+    "merchantParameters": "",
+    "merchantId": "99002216",
+    "merchantKey": "MMPjdgYW"
+  },
+  "Fibonatix Cysec": {
+    "pspId": "283",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "SafeCharge": {
+    "pspId": "300",
+    "merchantParameters": "",
+    "merchantId": "247HoldGTestTRX",
+    "merchantKey": "Fb53jhqpug"
+  },
+  "Inatec": {
+    "pspId": "314",
+    "merchantParameters": "",
+    "merchantId": "techfinancials_test",
+    "merchantKey": "1fc3"
+  },
+  "PayVision Cysec": {
+    "pspId": "2666",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "NetPay Cysec": {
+    "pspId": "2668",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "DataCash Cysec": {
+    "pspId": "2675",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "SafeCharge Cysec": {
+    "pspId": "2683",
+    "merchantParameters": "",
+    "merchantId": "247HoldGTestTRX",
+    "merchantKey": "Fb53jhqpug"
+  },
+  "Inatec_cysec": {
+    "pspId": "2693",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "FAC": {
+    "pspId": "2712",
+    "merchantParameters": "https://ecm.firstatlanticcommerce.com/PGServiceXML",
+    "merchantId": "88800413",
+    "merchantKey": "464748\\;Hi61CyHt"
+  },
+  "FAC Cysec": {
+    "pspId": "2713",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "Checkout_cysec": {
+    "pspId": "2749",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "Checkout": {
+    "pspId": "2814",
+    "merchantParameters": "",
+    "merchantId": "",
+    "merchantKey": ""
+  },
+  "AllCharge": {
+    "pspId": "141",
+    "merchantParameters": "",
+    "merchantId": "212643",
+    "merchantKey": "11111"
+  }
+}

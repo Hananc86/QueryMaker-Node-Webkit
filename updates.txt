@@ -1,0 +1,91 @@
+QueryMaker Updates for Version 2.1
+
+
+open now incognito instead regular chrome 
+added 'Open Server Button' for easly accses to DB etc..
+added new Psp emarceantpay_3D
+added new server to server list (Cherry)
+fix the error message that appears sometimes when you try to make manual deposit from backoffice "due to risk score"
+now we automaticly insert the correct query to database to fix it.
+(update brand set psp_criteria_priority='none' where id=127;)
+added new brand (Lowetal)
+
+error messages handler
+
+**********************
+
+
+
+
+Create random feed (for sunday)
+Fibonatix configuration
+Bonus Template The new1
+
+
+
+
+
+
+insert message template
+
+
+<br>grgjkrjgkrjkgjrk<br>grlkglrkglkglkr<br>gkr;gl;rgl;<br>gr'g;r'g;'g;<br><br><br>htlhktlkhlklk<br>grgjkrjgkrjkgjrk<br>grlkglrkglkglkr<br>gkr;gl;rgl;<br><br>gr'g;r'g;'g;<br>END<strike><br></strike>
+
+
+
+//create message template with ID 
+ insert into message_template (brand_id,name,created_by,creation_date,default_language,is_deleted) values  (168,'QueryMaker_LongMessage',4,now(),150,0); 
+
+
+
+// store the response id to varibale
+set @messageTemplateId = (select id from message_template where name like '%QueryMaker_LongMessage%');  
+set @contentMessage = '';
+
+
+
+// message content + concate to the message template 
+insert into message_template_content (template_id,language_id,created_by,creation_date,updated_by,update_date,title,content) values(@messageTemplateId,150,4,now(),0,NULL,'QueryMaker_LongMessage',@contentMessage); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

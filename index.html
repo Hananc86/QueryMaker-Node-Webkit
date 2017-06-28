@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<title>Query Maker - Hanan Cohen &copy;</title>
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <!--   <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+        <meta http-equiv="x-ua-compatible" content="ie=9">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css2/style.css">
+        <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="updates.js"></script>
+
+        <script type="text/javascript" src="js/creadencials.js"></script>
+        <script type="text/javascript">
+            window.resizeTo(1189, 859);
+        </script>
+        <meta http-equiv="x-ua-compatible" content="ie=8">
+        <script type="text/javascript" src="js2/index.js"></script>
+    </head>
+</head>
+
+<body>
+
+    <div class="modal-bg">
+        <div id="modal">
+            <span>Putty Username & Password <a href="#close" id="close">&#215;</a></span>
+            <form class="formPopUp">
+                <input id="username" name="username" type="textbox" value="" placeholder="Username" required>
+                <input id="password" name="password" type="password" value="" placeholder="Password" required>
+                <button type="button" id="popupSubmit" onclick="check()">Sign in</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="updatesContainer">
+        <h1 id="updatesHeader">Updates Are Available </h1>
+        <button class="btn btn-danger short" id="updatesNowButton" onclick="closeUpdatePopup()">Not Now</button>
+        <button class="btn btn-primary restart" id="updatesNowButton" onclick="updates()">Update Now</button>
+    </div>
+
+
+
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a id="menuVersion" href="#">
+               Query Maker </a>
+                </li>
+                <li>
+                    <a href="runDeck.html" onclick="window.resizeTo(1200, 1200);">RunDeck</a>
+                </li>
+                <li>
+                    <a href="jira.html">Jira</a>
+                </li>
+                <li>
+                    <a href="insightly.html">Insightly</a>
+                </li>
+                <li>
+                    <a href="helpcenter.html">Help Center</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="configuration.html">Configuration</a>
+                </li>
+
+                <li>
+                    <a href="bugfixes.html">Bug Fixes</a>
+                </li> 
+                <li>
+                    <a href="skinAdjustment.html">Skin Adjustment</a>
+                </li> 
+
+                <li>
+                    <a href="Send Messages To User.html">Messages & Notifications</a>
+                </li>     
+                <li>
+                    <a href="createTemplate.html">Create New Template</a>
+                </li>                                                             
+
+                <br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </a> <img src="tech.png" alt="logo" style="margin-left: 30px; margin-top: 10px;" />
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-primary" id="menu-toggle" style="margin-left: -20px;">Menu</a>
+                        <a href="#menu-toggle" class="restart btn btn-primary btn btn-danger" id="updates" onclick="checkUpdates()" style="margin-left:0px;">Check for Updates</a>
+                        <h1 class="version" id="title">Query Maker </h1>
+                        
+
+
+
+
+
+                        <div class=containerSort disabled>
+                            <h3 class="docs h3SortInstrument">Sort Instruments for v8.6 and up.</h3>
+                            <input type="checkbox" class="custom-control-input" id="sortInstrumentsCheckbox"><label style="color: white">Enable</label>
+                            <div class="sortInstruments">
+
+                                <ul id="sortable2">
+
+
+                                    <li class="ui-state-default" value="FX/CFD"><button class="btn btn-primary">FX/CFD</button> Drag</li>
+                                    <li class="ui-state-default" value="TRADE"><button class="btn btn-primary">TRADE</button> Drag</li>
+
+                                    
+                                </ul>
+                            </div>
+                                    <label>Binary</label><input type="checkbox" class="custom-control-input" id="insertBinary" checked>
+                                    <label>Forex</label><input type="checkbox" class="custom-control-input" id="insertForex" checked>
+
+                                    <button class="btn btn-primary wait" id="getInfoFromServer" onclick="getInformationFromServer()">Get Configuration From Server</button>
+                                    <button class="btn btn-danger restart" id="getInfoFromProduction" onclick="getInformationFromProduction()">Get Configuration From PRODUCTION</button>
+                                    <textarea id="textAreaInformation"></textarea>
+                        </div>
+
+
+
+                        <form action="#" class="form">
+                            <div class="form-group form-group-lg clearfix">
+                                <label for="error" class="col-lg-2 control-label">Server</label>
+                                <div class="col-lg-10 error clearfix">
+                                    <select class="gwt-ListBox brandsList clearfix" size="1" id="serverList"></select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group form-group-lg clearfix">
+                                <label for="error" class="col-lg-2 control-label">Brands</label>
+                                <div class="col-lg-10 error">
+                                <select class="gwt-ListBox brandsList" size="1" id="brandList"></select>
+                                </div>
+                            </div>
+
+
+
+                            <div class="pspContainer clearfix">
+                                <label for="error" class="col-lg-2 control-label pspLabel">PSP's:</label>
+                                <select id="demo" multiple="multiple"></select>
+
+
+
+                            </div>
+                            <div class="pspContainer clearfix">
+                                <label for="error" class="col-lg-2 control-label pspLabel">Languages:</label>
+                                <select id="demo2" multiple="multiple"> </select>
+                            </div>
+
+                            <div class="form-group form-group-lg clearfix">
+                                <label for="error" class="col-lg-2 control-label">Open Position Commission </label>
+                                <div class="col-lg-10 error clearfix">
+                                    <select class="gwt-ListBox brandsList clearfix" size="1" id="selectOpenPositionCommission">
+                                        <option></option>
+                                        <option value="Percentage">Percentage</option>
+                                        <option value="Flat">Flat</option>
+
+                                     </select>
+                                </div>
+                            </div>
+
+
+
+                            <div class="pspContainer clearfix" id="lotSize">
+                                <label for="commission" class="commissionLabel">Lot Size</label>
+                                <input type="text" class="commissionInput" name="commission" id="lotSizeInput">
+                            </div>
+
+                            <div class="pspContainer clearfix" id="lotCommission">
+                                <label for="commission" class="commissionLabel">Lot Commission</label>
+                                <input type="text" class="commissionInput" name="commission" placeholder="0.00" id="lotCommissionInput">
+                            </div>
+
+
+
+                            <div class="pspContainer clearfix" id="openPositionCommision">
+                                <label for="commission" class="commissionLabel">Open Position Commission (0-1) </label>
+                                <input type="text" class="commissionInput" name="commission" id="openPositionCommisionInput">
+                            </div>
+                       </div>
+
+                    </form>
+                </div>
+
+
+                <div id="popupMessage">
+                    <div id="headerPopupMessageDiv">
+                        <h1 id="popupMessageContentHeader"></h1>
+                    </div>
+                    <div id="bodyMessagePopup">
+                        <p id="paragraphPopupMessage"></p>
+                    </div>
+                    <button class="btn btn-primary buttonPopup" onclick="closePopupMessage()">OK</button>
+                </div>
+
+
+
+                <div class="checkboxes2">
+
+
+                    <label class="custom-control custom-checkbox">
+                     <input type="checkbox" class="custom-control-input" id="tokenization">
+                     <span class="custom-control-indicator"></span>
+                     <span class="custom-control-description">Tokenization</span>
+                     </label>
+
+
+                    <label class="custom-control custom-checkbox">
+                     <input type="checkbox" class="custom-control-input"  id="shortcc">
+                     <span class="custom-control-indicator"></span>
+                     <span class="custom-control-description">Short Credit Card</span>
+                     </label>
+
+
+                    <label class="custom-control custom-checkbox">
+                     <input type="checkbox" class="custom-control-input"  id="regulation">
+                     <span class="custom-control-indicator"></span>
+                     <span class="custom-control-description">Regulation</span>
+                     </label>
+
+                    <label class="custom-control custom-checkbox">
+                     <input type="checkbox" class="custom-control-input"  id="forex">
+                     <span class="custom-control-indicator"></span>
+                     <span class="custom-control-description">Forex</span>
+                     </label>
+
+                    <label class="custom-control custom-checkbox">
+                     <input type="checkbox" class="custom-control-input"  id="members_only">
+                     <span class="custom-control-indicator"></span>
+                     <span class="custom-control-description">Members Only</span>
+                     </label>                     
+
+                    <label class="custom-control custom-checkbox">
+                     <input type="checkbox" class="custom-control-input"  id="wagerRequired">
+                     <span class="custom-control-indicator"></span>
+                     <span class="custom-control-description">Display Wager Required False Bonuses</span>
+                     </label>
+
+
+
+
+
+                    <div class="buttons">
+                        <button type="button" class="wait btn btn-primary " id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Please Wait..." onclick="Run()"><img src="launch.png" alt="logo" />                                        Run!</button>
+                        <button type="button" class="short btn btn-primary btn btn-warning" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Please Wait..." onclick="reset()"> Reset </button>
+                        <div>
+                            <button type="button" class="short btn btn-primary btn btn btn-info" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Please Wait..." onclick="OpenBrowser()"><img src="chrome.png" alt="logo"
+                                     /> Open Browser </button>
+                            <button type="button" class="short btn btn-primary btn btn btn-info" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Please Wait..." onclick="BackOffice()"><img src="firefox.png"
+                                             alt="logo" /> Back
+                                         Office </button>
+                            <button type="button" class="wait btn btn-primary btn btn-info" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Please Wait..." onclick="browserSync()">
+                                         Browser-Sync </button>
+                            <button type="button" class="wait btn btn-primary btn btn-info" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Please Wait..." onclick="closeBrowserSync()">
+                                             Close Browser-Sync
+                                                 </button>
+                            <button type="button" class="wait btn btn-primary btn btn btn-info" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Please Wait..." onclick="Mobile()">
+                                                 Mobile
+                                                     Web
+                                                     </button>
+                            <button type="button" class="wait btn btn-primary btn btn btn-info" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Please Wait..." onclick="setDefualtBrandId()">
+                                                     Set
+                                                         Defualt
+                                                         Brand
+                                                         Id
+                                                         </button>
+                            <button type="button" class="short btn btn-primary btn btn btn-info" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Please Wait..." onclick="openServer()"><img
+                                                                 src="terminal.png"
+                                                                 alt="logo"
+                                                             />                                                                            Run
+                                                             Putty
+                                                             </button>
+                            <button type="button" class="restart btn btn-primary btn btn-danger" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Please Wait..." onclick="restart()"><img
+                                                                     src="restart.png"
+                                                                     alt="logo"
+                                                                 />                                                                                Restart
+                                                                 Server</button>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
+        <script type="text/javascript">
+            $('.wait').on('click', function() {
+                var $this = $(this);
+                $this.button('loading');
+                setTimeout(function() {
+                    $this.button('reset');
+                }, 4000);
+            });
+
+            $('.restart').on('click', function() {
+                var $this = $(this);
+                $this.button('loading');
+                setTimeout(function() {
+                    $this.button('reset');
+                }, 6000);
+            });
+
+            $('.short').on('click', function() {
+                var $this = $(this);
+                $this.button('loading');
+                setTimeout(function() {
+                    $this.button('reset');
+                }, 200);
+            });
+        </script>
+
+        <script type="text/javascript">
+            var data = fs.readFileSync('setPath.json');
+            var userSetting = JSON.parse(data);
+
+
+
+            USERNAME = userSetting.username;
+            PASSWORD = userSetting.password;
+            $('#username').val(userSetting.username);
+            $('#password').val(userSetting.password);
+
+
+            optionHTMLMaker('brandList', brands);
+            optionHTMLMaker('serverList', serverIpObj);
+            optionHTMLMaker('demo', pspObj);
+            OptionMakerForLangObj();
+
+            function windowsResize(width, height) {
+                window.resizeTo(width, height);
+            }
+
+            $("#selectOpenPositionCommission").change(function() {
+
+
+                if ($("#selectOpenPositionCommission").val() === 'Percentage') {
+                    windowsResize(1189, 880);
+                    $("#openPositionCommision").attr('style', "display:block");
+                    $("#lotCommission").attr('style', "display:none");
+                    $("#lotSize").attr('style', "display:none");
+                    $("#lotCommissionInput").val('');
+                    $("#lotSizeInput").val('');
+
+                } else if ($("#selectOpenPositionCommission").val() === 'Flat') {
+                    windowsResize(1189, 950);
+                    $("#lotCommission").attr('style', "display:block");
+                    $("#lotSize").attr('style', "display:block");
+                    $("#openPositionCommision").attr('style', "display:none");
+                    $("#openPositionCommisionInput").val('');
+
+                } else {
+                    $("#openPositionCommision").attr('style', "display:none");
+                    $("#lotCommission").attr('style', "display:none");
+                    $("#lotSize").attr('style', "display:none");
+                    $("#lotCommissionInput").val('');
+                    $("#lotSizeInput").val('');
+                    $("#openPositionCommisionInput").val('');
+                    windowsResize(1189, 800);
+                }
+            });
+
+            //sort Instruments
+            $('#sortInstrumentsCheckbox').click(function() {
+                if ($(this).is(':checked')) {
+                    $('.sortInstruments').attr('style', "opacity:1");
+
+                } else {
+                    $('.sortInstruments').attr('style', "opacity:0.5");
+                }
+            });
+
+
+
+            function closeUpdatePopup() {
+                $('#updatesContainer').attr('style', "display:none");
+                windowsResize(1189, 859);
+
+            }
+
+            function closePopupMessage() {
+                $('#popupMessage').attr('style', "display:none");
+
+            }
+
+            // alert($("#selectOpenPositionCommission").val());
+            // });
+        </script>
+
+        <script>
+            $(function() {
+                // $( "#sortable1" ).sortable({
+                //   items: "li:not(.ui-state-disabled)"
+
+                // });
+
+                $("#sortable2").sortable({
+                    cancel: ".ui-state-disabled"
+
+                });
+
+                // $( "#sortable1 li, #sortable2 li" ).disableSelection();
+            });
+        </script>
+
+        <script>
+
+        
+
+          var data = fs.readFileSync('setPath.json');
+          userSetting = JSON.parse(data);
+          USERNAME = userSetting.username;
+          PASSWORD = userSetting.password;
+     
+
+    if(USERNAME.length > 0 || PASSWORD.length > 0 ){
+        $('.modal-bg').attr('style', "display:none");
+        write('setPath.json',userSetting);        
+    }else {
+        $('.modal-bg').attr('style', "display:block");
+    }
+
+
+        </script>
+        <style>body { background: linear-gradient(to right, #1a4c85 0%,#046fab 35%,#0a7ab8 50%,#046fab 70%,#194c86 100%);}</style>
+
+</body>
+
+</html>

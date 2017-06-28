@@ -1,0 +1,22 @@
+[1208/145545:ERROR:registration_protocol_win.cc(53)] CreateFile: The system cannot find the file specified. (0x2)
+[1225/205053:ERROR:settings.cc(261)] Settings magic is not 1129342067
+[0122/152759:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0122/161227:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0123/085315:ERROR:registration_protocol_win.cc(53)] CreateFile: The system cannot find the file specified. (0x2)
+[0123/090738:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0123/092502:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0123/095301:ERROR:registration_protocol_win.cc(53)] CreateFile: The system cannot find the file specified. (0x2)
+[0123/101641:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0123/101839:ERROR:registration_protocol_win.cc(53)] CreateFile: The system cannot find the file specified. (0x2)
+[0123/102032:ERROR:registration_protocol_win.cc(53)] CreateFile: The system cannot find the file specified. (0x2)
+[0123/102255:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0123/121006:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0124/104056:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0124/151856:ERROR:registration_protocol_win.cc(53)] CreateFile: The system cannot find the file specified. (0x2)
+[0124/152135:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0215/195925:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0215/195925:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0216/133646:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0216/133646:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0301/150029:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0301/150029:ERROR:node_debugger.cc(86)] Cannot start debugger server
