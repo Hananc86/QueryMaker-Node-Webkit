@@ -1,0 +1,3 @@
+.login .asteriskLabel:nth-child(3),
+.openAccount .asteriskLabel:nth-child(9),
+.openAccount .asteriskLabel:nth-child(15)	                    { line-height:19px; }

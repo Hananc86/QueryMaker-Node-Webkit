@@ -1,0 +1,462 @@
+
+*                                   { margin: 0; padding: 0; }  
+
+
+        .clearfix:after {
+    content: "";
+    clear: both;
+    display:block;
+}
+
+/*#wrapper { display: none; }*/
+
+
+h4 {
+
+margin-left: 100px;
+margin-top: 50px;
+
+}
+
+button.btn.btn-primary {
+    margin-top: 2%;
+    margin-right: 10px;
+}
+
+.checkboxes {
+
+    margin-left: 26.26%;
+    margin-top: 2%;
+}
+
+.form{
+        /*margin-left: 26.26%;*/
+                margin-left: 30.26%;
+
+}
+
+
+select   {
+        width: 232px;
+}
+
+.col-lg-10 {
+    padding: 0;
+}
+
+.col-lg-2 {
+    float: left;
+    width: 100%;
+    padding: 0;
+}
+
+
+
+
+#btn-success{
+        margin-left: 35%;
+    margin-top: -58px;
+}
+}
+
+#langDiv {
+    border:4px solid red;
+    width: 20px;
+    height: 20px;
+
+}
+
+
+
+
+.open>.dropdown-menu {
+    display: block;
+    width: 233px;
+
+}
+
+
+
+
+.custom-checkbox {
+    margin-right: 15px;
+}
+
+
+
+
+  .multiselect {
+        width: 200px;
+            float: right;
+    margin-right: 200px;
+    margin-top: -26px;
+      color: black;
+  background:  #bdbdc7;
+    }
+    .selectBox {
+        position: relative;
+    }
+    .selectBox select {
+        width: 100%;
+        font-weight: bold;
+    }
+    .overSelect {
+        position: absolute;
+        left: 0; right: 0; top: 0; bottom: 0;
+    }
+    #checkboxes {
+        display: none;
+        height: 200px;
+        overflow-y: scroll;
+        border: 1px #dadada solid;
+    }
+    #checkboxes label {
+        display: block;
+    }
+    #checkboxes label:hover {
+        background-color: #1e90ff;
+    }
+
+    .dropdown-menu {
+        height: 220px;
+        overflow-x: hidden;
+    }
+
+    #demo,
+    #demo2 {
+        display: none;
+    }
+
+
+label.col-lg-2.control-label.pspLabel {
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.pspContainer  {
+    margin-bottom: 20px;
+}
+
+button.multiselect.dropdown-toggle.btn.btn-default {
+    width: 233px;
+}
+
+select#serverList,
+.commissionInput,
+.brandsList {
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    height: 30px !important;
+    text-indent: 5px;
+}
+
+.checkboxes{
+        margin-left: -33px;
+}
+
+
+label.commissionLabel {
+    display: block;
+
+}
+
+.commissionInput {
+    width: 232px;
+}
+
+ .checkboxes2 { margin-top: -2px;}
+
+
+a {margin-left: 34px;}
+
+
+input,select,span {
+cursor: pointer;
+
+}
+        
+
+
+#about {
+
+    width: 800px;
+    margin-left: 100px;
+    font-family: cursive;
+    line-height: 38px;
+    font-size: 19px;
+    color: white;
+}
+
+
+
+
+
+
+    html, body {
+  min-height: 100%;
+}
+
+body {
+  color: #404040;
+  background: #282537;
+  background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+
+}
+
+.container {
+  margin:0px;
+  color: #fdd;
+}
+
+.form {
+
+    color: aliceblue;
+}
+
+
+
+
+h1 {
+
+    color: aliceblue;
+}
+
+
+select, input , option {
+  color: black;
+  background:  #bdbdc7;
+  
+}
+
+#last { width: 163px; }
+
+#openPositionCommision { display: none; }
+#lotCommission { display: none; }
+#lotSize { display: none; }
+                  
+
+
+
+#updatesContainer {
+display: none;
+height: 45px;
+background: linear-gradient(to bottom, #5fcf80 0%,#66cc82 100%);
+padding: 0px 20%;
+padding-top: 9px;
+}
+
+
+#updatesHeader {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    
+}
+
+
+
+#updatesNowButton:hover {cursor: pointer; }
+
+#updatesNowButton {float:right;  margin: 0px; margin-top: -3px; margin-left:10px;}
+
+
+
+#popupMessage { display: none; background: #fff; width: 405px; height: 300px; position: absolute; top: 116px; left: 435px; border-radius: 12px; }
+#headerPopupMessageDiv { border-top-left-radius: 8px; border-top-right-radius: 8px;width: 405px; height: 48px; background: #36A9E1 }
+#popupMessageContentHeader  { font-size: 22px; margin: 0; text-align: center; line-height: 44px; } 
+#bodyMessagePopup { width: 396px; height: 202px}
+#bodyMessagePopup p { font-size: larger; font-family: monospace;   padding: 10px 0px 6px 26px; }
+.buttonPopup { width: 92px; margin: 2px 291px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ hsla(0,0%,100%,.1));
+    box-shadow: inset 0 0 100px hsla(0,0%,0%,.1);
+    height: 100%;
+    padding: 50px;
+    -webkit-box-sizing: border-box;
+}
+input {
+    display: block;
+    margin-bottom: 20px;
+}*/
+
+/* Checkbox */
+/*
+input[type="checkbox"] {
+    background-image: -webkit-linear-gradient(hsla(0,0%,0%,.1), hsla(0,0%,100%,.1)),
+                      -webkit-linear-gradient(left, #f66 50%, #6cf 50%);
+    background-size: 100% 100%, 200% 100%;
+    background-position: 0 0, 5px 0;
+    border-radius: 25px;
+
+    cursor: pointer;
+    height: 10px;
+    padding-right: 10px;
+    position: relative;
+    width: 20px;
+    -webkit-appearance: none;
+    -webkit-transition: .15s;
+}
+input[type="checkbox"]:after {
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    border-radius: 25px;
+    box-shadow: inset 0 1px 1px 1px hsla(0,0%,100%,1),
+                inset 0 -1px 1px 1px hsla(0,0%,0%,.25),
+                0 1px 3px 1px hsla(0,0%,0%,.5),
+                0 0 2px hsla(0,0%,0%,.25);
+    content: '';
+    display: block;
+    height: 10px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 10px;
+}
+input[type="checkbox"]:checked {
+    background-position: 0 0, 15px 0;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+input[type="range"] {
+    background-image: -webkit-linear-gradient(left, hsla(0,0%,100%,.1) 45%, transparent 45%),
+                      -webkit-linear-gradient(hsla(0,0%,0%,.1), hsla(0,0%,100%,.1)),
+                      -webkit-linear-gradient(left, #f66, #6cf);
+    background-size: 3px 3px, 100% 100%, 100% 100%;
+    border-radius: 25px;
+
+    cursor: ew-resize;
+    height: 10px;
+    position: relative;
+    width: 100px;
+    -webkit-appearance: none;
+    -webkit-transition: .15s;
+}
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    border-radius: 25px;
+
+    content: '';
+    display: block;
+    height: 10px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 10px;
+    -webkit-appearance: none;
+}
+
+
+
+
+
+
+
+   textarea { width: 500px;
+    height: 400px;
+    display: inline-block;
+
+}
+*/
+
+
+.form { display: inline-block; margin:0px; margin-left: 0px; width: 300px;}
+
+
+  #sortable1, #sortable2 { list-style-type: none; margin: 0; padding: 0; zoom: 1; }
+  #sortable1 li, #sortable2 li { margin: 0 5px 5px 5px; padding: 3px; /*width: 90%;*/ }
+
+
+
+  .sortInstruments {
+  border: solid 1px #cccccc;
+  border-radius: 7px;
+  opacity: 0.5;
+  background: #BDBDC7;
+  margin-bottom: 13px;
+  
+}
+
+.containerSort label { margin-right: 5px;}
+
+.containerSort{
+    display: inline-block;
+    float: right;
+    right: 100px;
+    color: black;
+    font-family: cursive;
+    
+    position: absolute;
+
+
+}
+
+.ui-state-default:hover {
+cursor: pointer;
+
+
+}
+
+/*.modal-bg{display: none;}*/
+
+.h3SortInstrument { color: white;}
+ .checkboxes2 {color:white;}
+
+ #sortable2 > li:nth-child(1):before {
+   content: "1";
+   padding-right: 10px;
+   font-family: monospace;
+   font-size: 20px;
+ }
+
+  #sortable2 > li:nth-child(2):before {
+   content: "2"; 
+   padding-right: 10px;
+   font-family: monospace;
+   font-size: 20px;
+ }
+
+
+
+#sortable2 label { margin-left: 31px; margin-right: 8px; }
+#sortable2 input { margin-top: 20px; }
+
+#insertBinary {    margin-right: 10px; }
+
+
+#getInfoFromServer { display: block; margin-bottom: 8px; }
+
+#textAreaInformation {  height: 127px; width: 426px; margin-top: 9px; border-radius: 7px; display: none; }
+.containerSort {margin: -60px -109px 0px 0px;}
+
+#getInfoFromProduction   {display: block;}

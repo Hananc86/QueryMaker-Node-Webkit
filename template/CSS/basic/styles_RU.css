@@ -1,0 +1,106 @@
+/* breaking relevant header to two lines */
+.forex_portfolio_positions_header .forex_portfolio_positions_header_tradeDetails,
+.forex_orders_positions_header .forex_orders_positions_header_tradeDetails	{ padding-right:6%; line-height:20px; }
+.my_portfolio_positions_header .my_portfolio_positions_header_tradeDetails	{ padding-right:8%; line-height:20px; }	
+
+/* two line labels in forms */
+.forgot_password_popup .field_userName label,
+.forgot_password_popup .field_email label,
+div.field_NcreditCardNumber label,
+div.field_creditCardNumber label,
+div.field_expiryDate label,
+div.field_currencyId label,
+div.field_captcha label,
+div.field_beneficiaryName label,
+div.field_accountNumber label,
+div.field_retypePassword label,
+div.field_bankAddress label{float: left;line-height: 14px;}
+
+.forex_portfolio_positions_header .forex_portfolio_positions_header_amount,
+.forex_orders_positions_header .forex_orders_positions_header_amount,
+.forex_orders_positions_header .forex_orders_positions_header_requestedPrice,
+.forex_orders_positions_header .forex_orders_positions_header_stopLoss,
+.forex_portfolio_positions_header .forex_portfolio_positions_header_stopLoss,
+.forex_portfolio_positions_header .forex_portfolio_positions_header_takeProfit,
+.forex_orders_positions_header .forex_orders_positions_header_takeProfit { line-height:20px; }
+
+.option_mode_buy_panel .option_mode_buy_button 			{ font-size: 20px; }
+.asset_mode_buy_button, .asset_mode_sendOrder_button 	{ font-size: 18px; }
+.options_list_header div.options_list_header_target { line-height:20px; }
+
+.instruments_navigation_super_panel { font-size: 12px; }
+.instruments_navigation_super		{ padding:0 2px; }
+
+.asset_mode_buy_amount_text { width: 50px; }
+
+/* messages */
+div.messages_table_action_button, div.messages_instance_action_button 	{ height: 36px; }
+.messages_instance_action_button.messages_instance_markAsRead_button,
+.messages_instance_action_button.messages_instance_markAsUnread_button,
+.messages_table_action_button.messages_table_markAsRead_button,
+.messages_table_action_button.messages_table_markAsUnread_button 		{ line-height: 18px; }
+.messages_table_action_button.messages_table_delete_button,
+.messages_instance_action_button.messages_instance_delete_button,
+.messages_instance_action_button.messages_instance_back_button 			{ line-height: 36px; }
+.messages_table_actions_panel input[type="checkbox"]					{ margin-top:11px; }
+.messages_pager															{ line-height:36px; }
+
+.position_type_buttons_conatiner .position_type_action1_button,
+.position_type_buttons_conatiner .position_type_action2_button  {font-size: 20px; }
+.position_type_panel_one_touch .position_type_explanation_label,
+.position_type_panel_touch_down .position_type_explanation_label { font-size: 13px; }
+
+.position_type_panel_boundary .position_type_explanation_label { font-size: 12px; line-height: 13px; }
+.position_type_panel_boundary .position_type_action1_button,
+.position_type_panel_boundary .position_type_action2_button {font-size: 17px; text-indent: -30px; }
+.position_type_panel_high_yield_boundary .position_type_explanation_label { font-size: 12px; }
+.position_type_panel_high_yield_boundary .position_type_target_value,
+.position_type_panel_high_yield_boundary .position_type_target_label { line-height: 40px; }
+
+/* login popup */
+.login_popup_footer						{ padding-left:25px; }
+.login_popup_not_member_label:after		{ margin:14px 9px 0; }
+.login_popup .field_captcha label 		{ width:50%; }	
+
+/* deposit */
+.deposit_cc_navigate_button				{ margin:10px 0; }
+
+/* withdrawal */
+.withdrawal_step_one_panel .withdrawal_step_availble_balance_label	{ width:290px; }
+.withdrawal_step_one_panel .withdrawal_step_requested_amount_input,
+.withdrawal_step_one_panel .withdrawal_step_next_button				{ width:130px; }
+
+/* demo user btn */
+.promoteToReal_panel_submit_button,
+.account_details_promoteToReal_button	{ margin-top:10px; }
+
+/* trading slip labels fix */
+.position_type_data_panel .position_type_target_label { width:59px; line-height: 14px; font-size:11px; }
+.position_type_panel_high_yield_boundary .position_type_target_label { width:auto; line-height:40px; font-size:14px; }
+.position_type_panel_one_touch .position_type_target_label, 
+.position_type_panel_touch_down .position_type_target_label 	{  width:50px; line-height:15px; }
+
+.roll_over_popup .roll_over_popup_apply_button	 { padding:0 20px; } /* rollover btns fix */
+
+/* asset info */
+.position_mode_propeties_target .position_mode_propeties_target_label	{ width:auto; }
+.trade_mode_propeties_west .trade_mode_propeties_label					{ padding-right:5px; }
+.trade_mode_propeties_prices_west, .trade_mode_propeties_prices_east	{ width:185px; }
+.trade_mode_action_takeProfit_label, .trade_mode_action_close_label,
+.order_mode_action_takeProfit_label										{ line-height:12px; }
+
+.asset_mode_buy_pipValue_label	{ width:70px; line-height:11px; } /* pip value */
+.table_tooltip, .trade_row_tooltip	{ width:350px; } /* south tables tooltip */
+.withdrawal_step_list_label			{ max-width:350px; }	/* withdrawal */
+
+/* stopLoss popup 8.4 */
+div.limits_popup_apply_button,
+.limits_popup_close_position_button	{ height:32px; line-height:32px; }
+.limits_popup_close_position_button	{ font-size:14px; line-height:16px;}
+
+/* open commision */
+.option_mode_buy_returnOnFailure_panel	{ line-height:12px; }
+.option_mode_buy_returnOnSuccess_panel	{ padding-bottom:3px; }
+
+/* bonus summary */
+.pieAssetsInvestedAmount > div { padding-bottom:40px; }

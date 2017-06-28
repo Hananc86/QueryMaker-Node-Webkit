@@ -1,0 +1,11 @@
+.menuPage .listBoxMobile_background{ font-size:12px; } /* language selector */
+.cardDetails .field_NcreditCardNumber label,
+.cardDetails .field_cw label	{ font-size:14px; line-height:15px; width:110px; }	/* cardDetails cvv label */
+
+/* touch/notouch & high yield touch/notouch btns fix */
+.positionTypeHighYieldTouch .positionTypeButton,
+.positionTypeOneTouch .positionTypeButton { font-size:12px; }
+
+/* fix for error ovelaping caption in bought option info */
+.positionDataPanel .closePanel .errorMessage { font-size:10px;}
+

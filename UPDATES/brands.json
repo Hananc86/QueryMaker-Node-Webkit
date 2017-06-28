@@ -1,0 +1,200 @@
+{
+  "optionaires": {
+    "id": "201",
+    "operator": "emma",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "globeFinancials": {
+    "id": "203",
+    "operator": "emma",
+    "frontEndServerIp": "192.168.50.8",
+    "frontEndDomain":""
+  },
+  "NordFX": {
+    "id": "206",
+    "operator": "mika",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "binaryFirst": {
+    "id": "199",
+    "operator": "emma",
+    "frontEndServerIp": "192.168.50.252",
+    "frontEndDomain":""
+  },
+  "GoBinary247": {
+    "id": "205",
+    "operator": "mika",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "VantageFX": {
+    "id": "37",
+    "operator": "enfinium",
+    "frontEndServerIp": "192.168.0.20",
+    "frontEndDomain":""
+  },
+  "TechFinancials": {
+    "id": "50",
+    "operator": "stg-full-sales",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "33option": {
+    "id": "80",
+    "operator": "fortune",
+    "frontEndServerIp": "192.168.30.9",
+    "frontEndDomain":""
+  },
+  "Tradorax": {
+    "id": "96",
+    "operator": "Tradorax",
+    "frontEndServerIp": "192.168.70.5",
+    "frontEndDomain":""
+  },
+  "365BinaryOption": {
+    "id": "113",
+    "operator": "nina",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "HalloOption": {
+    "id": "131",
+    "operator": "emma",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "HighOption": {
+    "id": "141",
+    "operator": "mika",
+    "frontEndServerIp": "192.168.0.180",
+    "frontEndDomain":""
+  },
+  "FX77": {
+    "id": "158",
+    "operator": "victor",
+    "frontEndServerIp": "192.168.80.6",
+    "frontEndDomain":""
+  },
+  "MaestroTrade": {
+    "id": "159",
+    "operator": "emma",
+    "frontEndServerIp": "192.168.50.5",
+    "frontEndDomain":""
+  },
+  "OptionCM": {
+    "id": "168",
+    "operator": "emma",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "33option-eu": {
+    "id": "173",
+    "operator": "fortune",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "0101option": {
+    "id": "174",
+    "operator": "victor",
+    "frontEndServerIp": "192.168.80.10",
+    "frontEndDomain":""
+  },
+  "99option": {
+    "id": "182",
+    "operator": "fortune",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "valiant markets": {
+    "id": "185",
+    "operator": "emma",
+    "frontEndServerIp": "192.168.50.12",
+    "frontEndDomain":""
+  },
+  "Tradex-Options": {
+    "id": "186",
+    "operator": "emma",
+    "frontEndServerIp": "192.168.50.14",
+    "frontEndDomain":""
+  },
+  "Chancellor Options": {
+    "id": "189",
+    "operator": "emma",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "BSBinary": {
+    "id": "195",
+    "operator": "victor",
+    "frontEndServerIp": "192.168.80.14",
+    "frontEndDomain":""
+  },
+  "myOption33": {
+    "id": "202",
+    "operator": "fortune",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "rzdcapital": {
+    "id": "211",
+    "operator": "mika",
+    "frontEndServerIp": "192.168.0.6",
+    "frontEndDomain":""
+  },
+  "OptionFair": {
+    "id": "1",
+    "operator": "optionfair",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "highlowunited": {
+    "id": "213",
+    "operator": "victor",
+    "frontEndServerIp": "192.168.80.253",
+    "frontEndDomain":""
+  },
+  "Quickoption": {
+    "id": "142",
+    "operator": "quick",
+    "frontEndServerIp": "192.168.15.107",
+    "frontEndDomain":""
+  },
+  "direktbroker24.de": {
+    "id": "214",
+    "operator": "lisa",
+    "frontEndServerIp": "192.168.20.251",
+    "frontEndDomain":""
+  },
+  "33efx": {
+    "id": "216",
+    "operator": "fortune",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "Tip-Option": {
+    "id": "127",
+    "operator": "mika",
+    "frontEndServerIp": "192.168.0.24",
+    "frontEndDomain":""
+  },
+  "BoomOption": {
+    "id": "206",
+    "operator": "mika",
+    "frontEndServerIp": "192.168.0.3",
+    "frontEndDomain":""
+  },
+  "TemplateBrand": {
+    "id": "200",
+    "operator": "",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  },
+  "asia33efx": {
+    "id": "216",
+    "operator":"victor",
+    "frontEndServerIp": "",
+    "frontEndDomain":""
+  }
+}

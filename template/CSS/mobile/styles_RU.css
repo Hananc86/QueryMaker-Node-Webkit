@@ -1,0 +1,31 @@
+/* '*' line-height fixes in labels */
+.login .asteriskLabel:nth-child(3),
+.openAccount .asteriskLabel:nth-child(9),
+.openAccount .asteriskLabel:nth-child(12),
+.openAccount .asteriskLabel:nth-child(15)	{ line-height:19px; }
+
+.positionTypePanel{ min-height:200px; }
+
+.tradingSlip .tradingSlipPanel .buy { font-size:12px;}
+.tradingSlip .positionTypeHighYieldBoundary .positionTypeButton { line-height:16px; }
+.tradingSlip .positionTypeBoundary .positionTypeButton:last-child	{ line-height:16px; }
+
+.positionType .positionTypeBoundary .positionTypeButton:last-child	{ line-height:16px; } /* out of Boundary btn */
+.positionType .positionTypeHighYieldBoundary .positionTypeButton { line-height:16px; }
+
+.cardDetails .field_country + .field + .field + .formButton,
+.cardDetails .field_NcreditCardNumber + .formButton { line-height:30px; } /* Card details btn */
+.cardDetails .depositFooter .newCreditCard { line-height:18px; } /* Card details btn on saved cards page - new credit card btn */
+
+.openAccountSuccess .saveCreditCard { line-height:30px; }
+
+/* btn on MyAccount page */
+.myAccountPage .myAccountPageButton				{ line-height:30px; }
+.myAccountPage .myAccountPageButton:last-child	{ line-height:60px; }
+
+/* for screen resolution < 345px */
+@media only screen and ( max-width: 345px) {	
+	.pageContainer .tradingClosesLabel { width:80px; line-height:16px; }	
+}
+
+.positionTypePanel .strikeLabel 								{ width: 20px; top:5px; font:bold 12px/12px Arial, Helvetica, sans-serif; } .strikeLabel 								{ width: 20px; top:5px; font:bold 12px/12px Arial, Helvetica, sans-serif; } .strikeLabel 								{ width: 20px; top:5px; font:bold 12px/12px Arial, Helvetica, sans-serif; }

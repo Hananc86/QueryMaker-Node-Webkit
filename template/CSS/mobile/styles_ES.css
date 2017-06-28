@@ -1,0 +1,14 @@
+/* '*' line-height fixes in labels */
+.login .asteriskLabel:nth-child(3),
+.openAccount .asteriskLabel:nth-child(9),
+.openAccount .asteriskLabel:nth-child(12),
+.openAccount .asteriskLabel:nth-child(19)	{ line-height:19px; }
+
+.cardDetails .field_expiryDate > label		{ max-width:100px; margin-right:5px; }
+.cardDetails .depositFooter .newCreditCard { line-height:18px; } /* Card details btn on saved cards page - new credit card btn */
+
+.openAccountSuccess .saveCreditCard { line-height:30px; }
+
+/* btn on MyAccount page */
+.myAccountPage .myAccountPageButton				{ line-height:30px; }
+.myAccountPage .myAccountPageButton:last-child	{ line-height:60px; }

@@ -1,0 +1,121 @@
+body {
+ /* background-color:#292B2C;*/
+ font-family: 'PT Sans', sans-serif;
+
+  color: #404040;
+  background: #282537;
+  background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+
+
+}
+a{
+	outline: 0;
+	text-decoration: none;
+}
+
+.modal-bg{
+	position:fixed;
+	left:0;right:0;
+	top:0;bottom:0;
+	z-index:100;
+	background-color:rgba(50,50,50,0.5);
+}
+
+#popupSubmit button{
+	position:relative;
+	font-size:17px;
+	background:#DA244F;
+	border-radius: 3px;
+	border-bottom: 3px solid #B5002A;
+	padding:7px 15px;
+	color:#fff;
+	cursor:pointer;
+	float:right;
+	margin:50px 70px;
+ 	-webkit-transition:margin 100ms;
+	-moz-transition:margin 100ms;
+	transition:margin 100ms ;	
+}
+#popupSubmit button:active{
+   margin: 53px 70px;
+}
+#popupSubmit button:hover{
+	background:#C40532;
+}
+.modal-bg form{
+	display:block;
+	margin:30px;
+}
+.modal-bg form *{
+	margin:10px;
+}
+.modal-bg input:focus{
+	border:2px solid #000;
+    outline:0;
+}
+.modal-bg input{
+	width:240px;
+	padding:7px;
+	border:2px solid #ccc ;
+	border-radius:3px;
+}
+#popupSubmit {
+	float: right;
+	padding: 8px 12px;
+	margin-top: 15px;
+	background: #000;
+	border: none;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#popupSubmit button:active{
+	margin: 18px 10px;
+}
+#popupSubmit button:hover{
+	background-color: #000;
+}
+#forgot-link{
+	font-size: 14px;
+	line-height: 45px;
+	color: #5DC3A7;
+	display: inline-block;
+}
+#forgot-link:hover{
+	color: #23AA84;
+}
+#modal{ 
+	position:absolute;
+	background-color:#F5F5F6;
+	top:50%; 
+	left:50%;
+	z-index:101;
+	border-radius:3px;
+	width:340px;
+	height:260px;
+	margin-top:-130px;
+	margin-left:-170px;
+	box-shadow:0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+#modal span{
+	display: block;
+	background:#000;
+	padding: 10px;
+	color:#fff;
+	border-radius:3px;
+}
+#close{
+	float: right;
+	color: #fff;
+	font-family: serif;
+	font-size: 15px;
+}
+#close:hover{
+	color: #000;
+}
+
+

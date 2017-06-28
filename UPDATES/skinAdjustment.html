@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<title>Query Maker - Hanan Cohen &copy;</title>
+<head>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/simple-sidebar.css" rel="stylesheet">
+   <meta http-equiv="x-ua-compatible" content="ie=9">
+   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+   <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+   <script type="text/javascript" src="js/creadencials.js"></script>
+   <script type="text/javascript">
+       window.resizeTo(1471, 803);
+   </script>
+   <meta http-equiv="x-ua-compatible" content="ie=8">
+   <script type="text/javascript" src="js2/index.js"></script>
+</head>
+</head>
+<body>
+
+   <div id="wrapperConf">
+    
+   <!-- Sidebar -->
+   <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+
+                    <a href="index.html">
+                        Home
+                    
+                </li>
+
+                
+                <li>
+                    <a href="runDeck.html" onclick="window.resizeTo(1200, 1200);">RunDeck</a>
+                </li>
+                <li>
+                    <a href="jira.html">Jira</a>
+                </li>
+                <li>
+                    <a href="insightly.html">Insightly</a>
+                </li>
+                <li>
+                    <a href="helpcenter.html">Help Center</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="configuration.html">Configuration</a>
+                </li>
+
+                <li>
+                    <a href="bugfixes.html">Bug Fixes</a>
+                </li>           
+
+                <li>
+                    <a href="Send Messages To User.html">Messages & Notifications</a>
+                </li>    
+
+         <br/><br/><br/><br/><br/><br/>
+         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+         </a> <img src="tech.png" alt="logo" style="margin-left: 30px; margin-top: 10px;" />
+      </ul>
+   </div>
+   <!-- /#sidebar-wrapper -->
+   <!-- Page Content -->
+   
+              
+<div class="container">    
+      <div class="header">
+
+    <div id="inputsBugsFixes">
+       <div class="inputBugs clear">  
+           <label>Brands</label>
+           <select class="brandListBugsFixes" size="1" id="brandListBugsFixes"></select>
+       </div>
+   
+       <div class="inputBugs clear">
+           <label>Server</label>
+           <select class="serverListBugsFixex clearfix" size="1" id="serverListBugsFixex"></select>
+       </div>
+
+        <div class="inputBugs clear">
+           <label>SkinAdjustment</label>
+           <select class="skinadjustment clearfix" size="1" id="">
+               <option>8.8</option>
+               <option>8.7 - Coming Soon</option>
+           </select>           
+       </div>
+       <button class="btn btn-primary" onclick="Next()">Next</button>
+  </div>
+
+
+
+
+     <div class="88">             
+   <div class="bugsList clear border">
+
+
+      <div class="itemDiv clear border">
+          <div>
+          <label>Instrument</label>
+         <select class="Instrument clearfix" size="1" id=""><option>forex</option><option>binary</option><option>both</option></select>
+         </div>
+
+         <div>
+          <label>User Status</label>
+         <select class="userStatus clearfix" size="1" id=""><option>logged in</option><option>logged out</option><option>both</option></select>
+         </div>
+
+         <div>
+          <label>How Many Tabs</label>
+         <select class="howManyTabs clearfix" size="1" id=""><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
+         </div>
+         <button class="btn btn-primary" onclick="hanan()">next</button>
+      </div>
+
+
+
+
+  </div>
+        <div>
+          <label>OutPut</label>
+         <textarea></textarea>
+         <button class="btn btn-primary" onclick="reset()">Reset</button>
+        </div>
+
+</div>
+
+</div>  
+
+
+   <script>
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+      });
+
+      
+      
+      
+   </script>
+
+<style>
+
+.divTabName { display: inline-block; float: left; margin-right: 43px; }
+.divTabName label,.divUrl label {  margin-right: 20px;}
+label {    margin-right: 30px; }
+#wrapperConf > div.container > div > div.bugsList.clear.border > div > div:nth-child(3)  { padding-bottom: 50px;}
+#wrapperConf > div.container > div > div.\38 8 > div.bugsList.clear.border > div > div:nth-child(2) > label { margin-right: 59px;}
+#wrapperConf > div.container > div > div.\38 8 > div.bugsList.clear.border > div > div:nth-child(1) > label {     margin-right: 62px;}
+
+.itemDiv div { padding-bottom: 20px;}
+.bugsList { width: 58%;     margin-top: 59px;}
+textarea {  width: 662px; height: 249px; color: black; margin-bottom: 50px; display: block;}
+#wrapperConf > div.container > div > div:nth-child(3) > label { display: block; margin-top: 50px;}
+#serverListBugsFixex {     margin-right: 20px;}
+.skinadjustment  {margin-right: 20px; float:right;}
+select {  border-radius: 3px;}
+
+</style>
+<script>
+
+        function Next(){
+
+           var skinadjustment = $('.skinadjustment').val();
+            if(skinadjustment=='8.8'){
+              $('.88').attr('style', "display:block");
+
+            }
+
+
+        }
+        function reset() {
+             $('textarea').val('');
+             readableCode="";
+             tabsNames = [];
+             urlArrays =[];
+             finalCode="";
+             $('input').val('');
+        }
+        function hanan(){
+            
+           userStatus = $(".userStatus").val();
+           tabs = $(".howManyTabs").val();
+           instrument = $(".Instrument").val();
+           tabsNames = [];
+           urlArrays =[];
+           readableCode ="";
+
+        if (userStatus.length > 0 && instrument.length>0) {
+
+            for(i=0; i<tabs; i++){
+                $('.itemDiv').append('<div class="divTabName"><label>Tab'+(i+1)+' Name</label><input id="tabName'+i+'" type="text"></div>');
+                $('.itemDiv').append('<div class="divUrl"><label>url</label><input id="tabUrl'+i+'" type="text"></div>');
+                $('.itemDiv').append('<br/> <br/> <br/>');
+                
+            }
+
+               $('.itemDiv').append('<Button class=" btn btn-primary executeButton" onclick="execute()">Execute</button>');
+           }
+        }
+        
+        function execute(){
+            
+            for(i=0; i<tabs; i++){
+             tabsNames.push( $('#tabName'+i+'').val());  
+             urlArrays.push( $('#tabUrl'+i+'').val());
+            }
+            
+            buildScript ();
+        }
+
+
+       
+      function buildScript() {
+
+
+          var finalCode = "if [[ -z $(grep \"^#tabs for forex and binary added by QueryScript\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a #tabs for forex and binary added by QueryScript\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi ";
+          readableCode += '###### Tabs for Forex and Binary Added by QueryScript ###### \n\n';
+          if (instrument == 'binary') {
+              if (userStatus === 'logged in') {
+                  readableCode += '#Binary Logged In\n';
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.numberOfTabs = " + tabs + " \" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.binary.loggedIn.numberOfTabs = " + tabs + "\n";
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi" +
+                          "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+
+                      readableCode += "config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + " \n";
+                      readableCode += "config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + " \n";
+
+                  }
+                  readableCode += '\n';
+
+              } else if (userStatus == 'logged out') {
+                  readableCode += '#Binary Logged Out\n';
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\n";
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+                  }readableCode += '\n';
+              } else if (userStatus == 'both') {
+                  readableCode += '#Binary Logged In\n';
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.binary.loggedIn.numberOfTabs = " + tabs + "\n";
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\"  conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+                  }readableCode += '\n';
+                 
+                  finalCode += "&& if [[ -z $(grep \"^#Binary Logged Out\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a #Binary Logged Out\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "#Binary Logged Out \n";
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]]\; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\n";
+
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\"  conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+                  }readableCode += '\n';
+              }
+
+
+          } else if (instrument === 'forex') {
+         if      (userStatus === 'logged in') {
+                   readableCode += "#Forex Logged In \n";
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\n";
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+                  }readableCode += '\n';
+        }else if (userStatus === 'logged out') {
+                  readableCode += "#Forex Logged Out \n";
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\n";
+
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+
+                  }readableCode += '\n';
+        }else if (userStatus === 'both') {
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "#Forex Logged In \n";
+                  readableCode += "config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\n";
+                  
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\"  conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi" +
+                          "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+
+                      readableCode += "config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+
+                  }readableCode += '\n';
+
+                  finalCode += "&& if [[ -z $(grep \"^#Forex Logged Out\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a #Forex Logged Out\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "#Forex Logged Out \n";
+
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\n";
+
+
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\"  conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+
+                  }readableCode += '\n';
+
+
+              }
+
+
+          } else if (instrument == 'both') {
+              if (userStatus === 'logged in') {
+                  readableCode += "#Binary Logged In \n";
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.numberOfTabs = " + tabs + " \" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.binary.loggedIn.numberOfTabs = " + tabs + "\n";
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi" +
+                          "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+
+                      readableCode += "config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + " \n";
+                      readableCode += "config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + " \n";
+
+                  }readableCode += '\n';
+
+                  readableCode += "#Forex Logged In \n";
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\n";
+
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+                  }readableCode += '\n';
+
+              } else if (userStatus == 'logged out') {
+
+                  readableCode += "#Binary Logged Out \n";
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\n";
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+                  }readableCode += '\n';
+
+                  readableCode += "#Forex Logged Out \n";
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\n";
+
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+                  }readableCode += '\n';
+
+
+              } else if (userStatus == 'both') {
+                  readableCode += "#Binary Logged In \n";
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.binary.loggedIn.numberOfTabs = " + tabs + "\n";
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\"  conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.binary.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.binary.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+                  }readableCode += '\n';
+                  
+                  finalCode += "&& if [[ -z $(grep \"^#Binary Logged Out\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a #Binary Logged Out\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "#Binary Logged Out \n";
+
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]]\; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.binary.loggedOut.numberOfTabs = " + tabs + "\n";
+
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\"  conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.binary.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.binary.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+
+                  }readableCode += '\n';
+
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "#Forex Logged In \n";
+                  readableCode += "config.banners.forex.loggedIn.numberOfTabs = " + tabs + "\n";
+                  
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\"  conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi" +
+                          "&& if [[ -z $(grep \"^config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+
+                      readableCode += "config.banners.forex.loggedIn.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.forex.loggedIn.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+
+                  }readableCode += '\n';
+
+                  finalCode += "&& if [[ -z $(grep \"^#Forex Logged Out\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a #Forex Logged Out\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "#Forex Logged Out \n";
+
+                  finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                  readableCode += "config.banners.forex.loggedOut.numberOfTabs = " + tabs + "\n";
+
+
+                  for (i = 0; i < tabs; i++) {
+                      finalCode += "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\"  conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi " +
+                          "&& if [[ -z $(grep \"^config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN) ]] \; then echo 'editing' \; sed -i -e \"\\$a config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\" conf.propetiesHANAN 2>&1 \; else echo \"Line is there\" \; fi";
+                      readableCode += "config.banners.forex.loggedOut.buttonLabel.contenttab." + (i + 1) + " = " + tabsNames[i] + "\n";
+                      readableCode += "config.banners.forex.loggedOut.url.contenttab." + (i + 1) + " = " + urlArrays[i] + "\n";
+
+
+                  }readableCode += '\n';
+
+
+
+
+              }
+
+
+
+            }
+               console.log(finalCode);
+               $('textarea').append(readableCode);
+
+            }
+
+
+        
+    
+ 
+    $('.88').attr('style', "display:none");
+
+        // } else if (userSetting2.popupMessage===userSetting.username) {
+        //     $('#popupMessageContentHeader').replaceWith('<h1 id="popupMessageConetentHeader" >'+userSetting2.popupMessageContentHeader+'</h1>');        
+        //     $('#paragraphPopupMessage').replaceWith('<p id="paragraphPopupMessage" >'+userSetting2.popupMessageContentBody+'</p>');        
+        //     $('#popupMessage').attr('style', "display:block");
+
+        // } else {
+        //     $('#updatesContainer').attr('style', "display:none");
+        //     window.resizeTo(1189, 850);
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+   <script type="text/javascript">
+      $('.wait').on('click', function() {
+      var $this = $(this);
+      $this.button('loading');
+      setTimeout(function() {
+          $this.button('reset');
+      }, 4000);
+      });
+      
+      $('.restart').on('click', function() {
+      var $this = $(this);
+      $this.button('loading');
+      setTimeout(function() {
+          $this.button('reset');
+      }, 8000);
+      });
+      
+       $('.short').on('click', function() {
+      var $this = $(this);
+      $this.button('loading');
+      setTimeout(function() {
+          $this.button('reset');
+      }, 200);
+      });
+      
+   </script>
+
+   <script type="text/javascript">
+
+           // brands          = read('brands.json');
+       // serverIpObj     = read('serverIpObj.json');
+       optionHTMLMaker('brandListBugsFixes',brands);
+       optionHTMLMaker('serverListBugsFixex',serverIpObj);
+       
+
+
+
+       
+       
+  
+   </script>
+    <style type="text/css" media="screen">
+
+*                                   { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; box-sizing: border-box;  }
+.container                          {     margin: 0 0 0 268px; }
+.clear:after 						{ clear: both ;content: " "; display: block;font-size: 0; height: 0; visibility: hidden; }
+/*.border                             {border:solid 1px #ccc;}*/
+.itemDiv                           { height: 72px;}
+.itemDiv p                         {float: left;font-family: cursive; font-size: 19px; }
+.itemDiv button                    {float: right;}
+button.btn.btn-primary             { margin-top: 0px;  margin-right: 10px; }
+.header h1                         { padding-bottom: 52px; }
+.bugsList                          { border: solid 1px white;  padding: 20px;   }
+#brandListBugsFixes                {float: left; }
+#serverListBugsFixex                {float: right; }
+.inputBugs label { float: left; margin: 0 20px 0px 0px; }
+.inputBugs          {display: inline-block;}
+#brandListBugsFixes { margin-right: 24px;}
+#inputsBugsFixes    {    padding-top: 40px;}
+
+
+
+</style>
+</body>
+</html>

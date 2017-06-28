@@ -1,0 +1,29 @@
+.login .field_userName .collection,
+.login .field_email .collection                                 { flex-basis: 60%; }
+.field .label                                                   { max-width: 40%; flex-basis: 40%; }
+.mobileFirstNameLabel, .mobileLastNameLabel,
+.mobileUserNameLabel,
+.mobileEmailLabel, .mobilePhoneLabel,
+.mobileCurrencyLabel,
+.userNameLabel, .passwordLabel                                  { flex-basis: 42%; }
+.field                                                          { flex-basis: 55%; }
+.field .label                                                   { max-width: 39%; flex-basis: 39%; }
+.openAccount .asteriskLabel:nth-child(19)	                    { line-height:19px; }
+
+.field .label                                                   { max-width:35%; flex-basis:30%; }
+
+.openAccountSuccess .startTrading, .saveCreditCard              { font-size:20px; }
+
+.newCreditCard                                                  { font-size:12px; }
+
+.optionRow div                                                  { font-size:11px; }
+
+/* My Account Buttons - Text Overlap fixed */
+.myAccountPageButton { font-size: 20px; }
+
+/* Change Password error messages alignment */
+.changePassword .form .fieldError { margin-left: 30%; }
+
+/* Forgot Password panel text alignment */
+.login .forgotPasswordRequiredText + .form .fieldError  { margin-left: 30%; }
+.login .forgotPasswordRequiredText + .form label        { font-size: 11px; }

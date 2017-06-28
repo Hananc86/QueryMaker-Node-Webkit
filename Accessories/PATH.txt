@@ -1,0 +1,4 @@
+winscp  C:\Program Files (x86)\WinSCP
+nodejs  aoutomaticly
+hosts   D:\UserName\QueryMakerNodeWebKit\Accessories
+plink (for open server function) D:\Hanan Cohen\QueryMakerNodeWebKit\Accessories\putty

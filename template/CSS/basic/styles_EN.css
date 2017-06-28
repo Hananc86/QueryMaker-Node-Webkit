@@ -1,0 +1,12 @@
+/* breaking forex relevant header to two lines */
+.forex_portfolio_positions_header .forex_portfolio_positions_header_takeProfit,
+.forex_portfolio_positions_header .forex_portfolio_positions_header_netProfit,
+.forex_orders_positions_header .forex_orders_positions_header_requestedPrice,
+.forex_orders_positions_header .forex_orders_positions_header_takeProfit		{ padding-right:5%; line-height:20px; }
+
+/* two line labels in forms */
+div.field_cardholdersFirstName label,
+div.field_cardholdersLastName label,
+div.field_bankAddress label														{ float:left; line-height:14px }
+
+

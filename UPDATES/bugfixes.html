@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<title>Query Maker - Hanan Cohen &copy;</title>
+<head>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/simple-sidebar.css" rel="stylesheet">
+   <meta http-equiv="x-ua-compatible" content="ie=9">
+   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+   <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+   <script type="text/javascript" src="js/creadencials.js"></script>
+   <script type="text/javascript">
+       window.resizeTo(1471, 803);
+   </script>
+   <meta http-equiv="x-ua-compatible" content="ie=8">
+   <script type="text/javascript" src="js2/index.js"></script>
+</head>
+</head>
+<body>
+
+   <div id="wrapperConf">
+    
+   <!-- Sidebar -->
+   <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+
+                    <a href="index.html">
+                        Home
+                    
+                </li>
+
+                
+         <li>
+         <a href="runDeck.html" onclick="window.resizeTo(1200, 1200);" >RunDeck</a>
+         </li>
+         <li>
+            <a href="jira.html">Jira</a>
+         </li>
+         <li>
+            <a href="insightly.html">Insightly</a>
+         </li>
+         <li>
+            <a href="helpcenter.html">Help Center</a>
+         </li>
+         <li>
+            <a href="about.html">About</a>
+         </li>
+         <li>
+             <a href="configuration.html">Configuration</a>
+         </li>    
+                <li>
+                    <a href="skinAdjustment.html">Skin Adjustment (New!)</a>
+                </li>
+                <li>
+                    <a href="Send Messages To User.html">Messages & Notifications</a>
+                </li>                                  
+
+         <br/><br/><br/><br/><br/><br/>
+         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+         </a> <img src="tech.png" alt="logo" style="margin-left: 30px; margin-top: 10px;" />
+      </ul>
+   </div>
+   <!-- /#sidebar-wrapper -->
+   <!-- Page Content -->
+   
+              
+<div class="container">    
+      <div class="header">
+
+    <div id="inputsBugsFixes">
+       <div class="inputBugs clear">  
+           <label>Brands</label>
+           <select class="brandListBugsFixes" size="1" id="brandListBugsFixes"></select>
+       </div>
+   
+       <div class="inputBugs clear">
+           <label>Server</label>
+           <select class="serverListBugsFixex clearfix" size="1" id="serverListBugsFixex"></select>
+       </div>
+  </div>
+
+         <h1>Common Issues</h1>
+      </div>
+
+
+
+
+                  
+   <div class="bugsList clear border">
+
+
+      <div class="itemDiv clear border">
+         <p>Issue with missing entries in brand_property table (8.5 and up) </p>
+         <button class="short btn btn-danger">Information</button>
+         <button class="short btn btn-primary" onclick="Issue_with_missing_entries_in_brand_property_table()">Fix Now</button>
+      </div>
+
+
+      <div class="itemDiv clear border">
+         <p>Missing property for inatec in conf.properties (Inatec.custom1=123456)</p>
+         <button class="short btn btn-danger">Information</button>
+         <button class="short btn btn-primary" onclick="InatecIssueCommand()">Fix Now</button>
+      </div>      
+
+
+
+      <div class="itemDiv">
+         <p>Issue with assets and open account after copying brand (8.6 and up)  -  Comming Soon</p>
+         <button class="short btn btn-danger" id="">Information</button>
+         <button class="short btn btn-primary" id="" onclick="Issue_with_assets_and_open_account_after_copying_brand()">Fix Now</button>
+         
+      </div>
+
+
+      <div class="itemDiv clear border">
+         <p>Issue with switching platforms 8.6   -  Comming Soon</p>
+         <button class="short btn btn-danger">Information</button>
+         <button class="short btn btn-primary">Fix Now</button>
+      </div>
+
+
+
+  </div>
+
+
+
+</div>  
+
+
+   <script>
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+      });
+
+      
+      
+      
+   </script>
+
+
+   <script type="text/javascript">
+      $('.wait').on('click', function() {
+      var $this = $(this);
+      $this.button('loading');
+      setTimeout(function() {
+          $this.button('reset');
+      }, 4000);
+      });
+      
+      $('.restart').on('click', function() {
+      var $this = $(this);
+      $this.button('loading');
+      setTimeout(function() {
+          $this.button('reset');
+      }, 8000);
+      });
+      
+       $('.short').on('click', function() {
+      var $this = $(this);
+      $this.button('loading');
+      setTimeout(function() {
+          $this.button('reset');
+      }, 200);
+      });
+      
+   </script>
+
+   <script type="text/javascript">
+
+           // brands          = read('brands.json');
+       // serverIpObj     = read('serverIpObj.json');
+       optionHTMLMaker('brandListBugsFixes',brands);
+       optionHTMLMaker('serverListBugsFixex',serverIpObj);
+       
+
+
+
+       
+       
+  
+   </script>
+    <style type="text/css" media="screen">
+
+*                                   { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; box-sizing: border-box;  }
+.container                          {     margin: 0 0 0 268px; }
+.clear:after 						{ clear: both ;content: " "; display: block;font-size: 0; height: 0; visibility: hidden; }
+/*.border                             {border:solid 1px #ccc;}*/
+.itemDiv                           { height: 72px;}
+.itemDiv p                         {float: left;font-family: cursive; font-size: 19px; }
+.itemDiv button                    {float: right;}
+button.btn.btn-primary             { margin-top: 0px;  margin-right: 10px; }
+.header h1                         { padding-bottom: 52px; }
+.bugsList                          { border: solid 1px white;  padding: 20px;   }
+#brandListBugsFixes                {float: left; }
+#serverListBugsFixex                {float: right; }
+.inputBugs label { float: left; margin: 0 20px 0px 0px; }
+.inputBugs          {display: inline-block;}
+#brandListBugsFixes { margin-right: 24px;}
+#inputsBugsFixes    {    padding-top: 40px;}
+
+
+
+</style>
+</body>
+</html>

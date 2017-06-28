@@ -1,0 +1,55 @@
+/* two line labels in forms */
+div.field_cardholdersFirstName label,
+div.field_cardholdersLastName label,
+div.field_bankAddress label,
+div.field_captcha label 	 {float: left;line-height: 14px;}
+
+.asset_mode_buy_button,
+.asset_mode_sendOrder_button { font-size: 16px; }
+.option_mode_buy_amount_text, .asset_mode_buy_amount_text { width: 90px; }
+
+/* messages */
+div.messages_table_action_button, div.messages_instance_action_button 	{ height: 36px; }
+.messages_instance_action_button.messages_instance_markAsRead_button,
+.messages_instance_action_button.messages_instance_markAsUnread_button,
+.messages_table_action_button.messages_table_markAsRead_button,
+.messages_table_action_button.messages_table_markAsUnread_button 		{ line-height: 18px; }
+.messages_table_action_button.messages_table_delete_button,
+.messages_instance_action_button.messages_instance_delete_button,
+.messages_instance_action_button.messages_instance_back_button 			{ line-height: 36px; }
+.messages_table_actions_panel input[type="checkbox"]					{ margin-top:11px; }
+.messages_pager															{ line-height:36px; }
+
+/* login popup */
+.login_popup_footer						{ padding-left:40px; }
+.login_popup .field_captcha label 		{ width:50%; }	
+
+.positions_sentiment_sentimentBar_label	{ line-height:10px; } /* sentiment bar label */
+
+.roll_over_popup .roll_over_popup_apply_button	 { padding:0 30px; } /* rollover btns fix */
+
+/* asset info */
+.position_mode_propeties_panel, .trade_mode_propeties_panel						{ font-size:12px; }
+.position_mode_propeties_transactionId, .position_mode_propeties_positionType,
+.trade_mode_propeties_transactionId, .trade_mode_propeties_positionType			{ width:210px; }
+
+/* trading slip labels fix */
+.position_type_panel_high_yield_touch .position_type_instrument_label 	{ line-height: 16px; }
+
+.trade_mode_action_label.trade_mode_action_closeStatus { padding-left: 25px; }
+
+.table_tooltip, .trade_row_tooltip	{ width:260px; } /* south tables tooltip */
+
+/* deposit */
+.deposit_cc_navigate_button			{ padding:0 5px; }
+
+
+/* deposit failure of inatec 3d */
+.deposit_cc_to_trade_button			{ width:215px }
+
+
+.limits_popup_close_position_button_in_money,
+.limits_popup_close_position_button_out_money		 { padding: 0 4px; font-size: 15px}
+
+/* e-wallet succsful deposit message font color and button fix */
+.extDepositResultCenter .deposit_cc_to_trade_button { width: 220px; }

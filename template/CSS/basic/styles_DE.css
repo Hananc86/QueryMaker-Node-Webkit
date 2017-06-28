@@ -1,0 +1,84 @@
+/* two line labels in forms */
+div.field_currencyId label,
+div.field_captcha label,
+div.field_currencyId label,
+div.field_expiryDate label,
+div.field_cardholdersFirstName label,
+div.field_cardholdersLastName label,
+div.field_NcreditCardNumber label,
+div.field_bankAddress label	 	{ float:left; line-height:14px;}
+div.field_bankAddress label		{ float:none; }
+
+.option_mode_buy_panel .option_mode_buy_button 				{ font-size: 20px; }
+
+.forex_slip_properties_container .asset_direction_action_button .asset_direction_button_label { text-indent: -10px; }
+
+.trade_mode_action_label.trade_mode_action_closeStatus 		{ width: 100px;padding-left: 25px;white-space: normal;line-height: 12px; }
+
+.option_mode_buy_amount_text, .asset_mode_buy_amount_text 	{ width: 90px; }
+.option_mode_buy_panel .option_mode_buy_info_panel 						{ line-height: 14px; }
+
+.position_type_buttons_conatiner .position_type_action1_button,
+.position_type_buttons_conatiner .position_type_action2_button  		{ font-size: 20px; }
+.position_type_panel_high_low .position_type_explanation_label 			{ font-size: 12px; }
+
+.asset_mode_buy_button, .asset_mode_sendOrder_button					{ padding:0 25px; line-height:20px; }
+
+.promoteToReal_panel_submit_button 										{ width:160px; line-height:14px; font-size:13px; }
+.fast_deposit_reject_button												{ width:auto; }
+
+/* messages */
+div.messages_table_action_button, div.messages_instance_action_button 	{ height: 36px; }
+.messages_instance_action_button.messages_instance_markAsRead_button,
+.messages_instance_action_button.messages_instance_markAsUnread_button,
+.messages_table_action_button.messages_table_markAsRead_button,
+.messages_table_action_button.messages_table_markAsUnread_button 		{ line-height: 18px; }
+.messages_table_action_button.messages_table_delete_button,
+.messages_instance_action_button.messages_instance_delete_button,
+.messages_instance_action_button.messages_instance_back_button 			{ line-height: 36px; }
+.messages_table_actions_panel input[type="checkbox"]					{ margin-top:11px; }
+.messages_pager															{ line-height:36px; }
+
+/* login popup */
+.login_popup_footer						{ padding-left:15px; }
+.login_popup_not_member_label:after		{ margin:14px 9px 0; }
+.login_popup .field_captcha label 		{ width:50%; }	
+
+.positions_sentiment_sentimentBar_label	{ line-height:10px; }	/* sentiment bar label */
+.roll_over_popup_buttons_panel	div 	{ padding:0 25px; }
+
+/* asset info */
+.position_mode_propeties_transactionId, .position_mode_propeties_positionType,
+.trade_mode_propeties_transactionId, .trade_mode_propeties_positionType		{ width:215px; }
+.trade_mode_action_takeProfit_label, .order_mode_action_takeProfit_label	{ line-height:12px; }
+
+/* trading statistics */
+.pieInstrumentsInvestedAmount > .pieTitle,
+.pieAssetsInvestedAmount > .pieTitle			{ padding-bottom:40px; }
+
+/* instruments values sizes */
+.position_type_panel_high_yield_touch .position_type_market_value, 
+.position_type_panel_high_yield_touch .position_type_target_value, 
+.position_type_panel_below .position_type_target_value, 
+.position_type_panel_below .position_type_market_value, 
+.position_type_panel_above .position_type_target_value, 
+.position_type_panel_above .position_type_market_value{ font-size:14px; }
+.position_type_panel_high_yield_boundary .position_type_target_value, 
+.position_type_panel_high_yield_boundary .position_type_target2_value,
+.position_type_panel_high_yield_boundary .position_type_market_value{ font-size:13px; }
+.position_type_panel_touch_down .position_type_market_value,
+.position_type_panel_touch_down .position_type_target_value,
+.position_type_panel_one_touch .position_type_market_value,
+.position_type_panel_one_touch .position_type_target_value { font-size:20px; }
+
+/* deposit */
+.deposit_cc_navigate_button		{ padding:0 10px; }
+
+.table_tooltip, .trade_row_tooltip	{ width:240px; }	/* south tables tooltip */
+
+.withdrawal_step_list_label		{ max-width:280px; }	/* withdrawal */
+
+/* stopLoss popup 8.4 */
+div.limits_popup_apply_button,
+.limits_popup_close_position_button	{ min-width:243px; padding:0; }
+.limits_popup_close_position_button	{ font-size:14px; }

@@ -1,0 +1,26 @@
+/* '*' line-height fixes in labels */
+.login .asteriskLabel:nth-child(3),
+.openAccount .asteriskLabel:nth-child(9),
+.openAccount .asteriskLabel:nth-child(12)		  { line-height:19px; }
+.optionRow .optionRowExpiry						  {line-height: 27px;display: flex;justify-content: center;align-items: center;height: 100%;}
+.cardDetails .field_expiryDate > label			  { max-width:100px; margin-right:5px; }
+
+/* btn on MyAccount page */
+.myAccountPage .myAccountPageButton:last-child	   { line-height:60px; }
+
+.tradingMenuInstruments .menuListLabel 	  		   { line-height:18px; }
+
+/* for screen resolution < 360px */
+@media only screen and ( max-width: 360px) {	
+	.pageContainer .tradingClosesLabel 		        { width:80px; line-height:16px; }
+}
+
+/*forgot pass*/
+.field .label 									 	{ font-size:13px; }
+
+/*deposit*/
+.newCreditCard									    {width:220px; font-size:14px; }
+.openAccountSuccess .saveCreditCard, .startTrading	{ font-size:17px; }
+
+/* My Account Buttons - Text Overlap fixed */
+.myAccountPageButton { font-size: 20px; }

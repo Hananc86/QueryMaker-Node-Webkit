@@ -1,0 +1,25 @@
+.openAccount .asteriskLabel:nth-child(9),
+.openAccount .asteriskLabel:nth-child(12),
+.login .asteriskLabel:nth-child(3)              { line-height: 19px; }
+
+
+@media screen and (max-width: 413px) {
+  .optionsListHeader .optionsListHeaderExpiry {
+    line-height: 16px;
+  }
+}
+
+.menuListButton.tradingMenuMarkets            { width: 30%; }
+.tradingMenu .tradingMenuInstruments          { width: 42%; }
+
+.newCreditCard                                { font-size:12px; }
+
+.positionTypePanel		                      { min-height:190px; }
+
+
+/*trade*/
+.expirationPanel                              { box-sizing:border-box; padding-top:5px; }
+.expires                                      { margin-top:5px; }
+.expiresLabel, .tradingClosesLabel            { width:65px; font:12px/14px Arial, Helvetica, sans-serif;  }
+
+.saveCreditCard                               { font-size:23px; }

@@ -1,0 +1,107 @@
+body					{ direction:rtl; }
+
+/* Header - .headerPanel */
+.logo					{ float:right; }
+.balance 				{ margin:0 0 0 10px; float:left; }
+.balanceLabel 			{ margin:0 10px 0 5px; float: left; }
+.topPanelLanguagesList 	{ float:left; }
+
+/* Form */
+.field .listBoxMobile_background	{ padding:0 0 0 20px; background:#cfd8dd url("images/form-arrow.png") 4% center no-repeat; }
+
+/* Login page */
+.login .forgotPasswordButton 	{ text-align:left; }
+
+/* Forgot Password page */
+.forgotPasswordRequiredText 	{ text-align:left; }
+.formErrors						{ background-position:280px 12px; }
+.login .forgotPasswordRequiredText + .form .fieldError 	{ margin-left:0; margin-right:35%; }
+
+/* MenuPage */
+.tools		{ text-align:left; }
+
+/* Options List - .trading */
+.tradingMenu .menuListButton 	{ float:right; }
+.menuList 						{ text-align:right; }
+.menuListItem 					{ padding:0 12px 0 0; }
+.optionRow div					{ float:right; }
+.optionsListHeader .optionsListHeaderAsset	{ text-align:right; padding-left:0; padding-right:3%; }
+.optionRow .optionRowAsset		{ text-align:right; padding:0 3% 0 4%; direction:ltr; border-right:0; border-left:1px solid #505050;  }
+.optionRow .optionRowTarget		{ border-right:0; border-left:1px solid #505050; }
+.optionRow .optionRowExpiry		{ border-right:0; border-left:1px solid #505050; }
+
+.optionsListHeader .optionsListHeaderAsset:after,	
+.optionsListHeader .optionsListHeaderTarget:after,	
+.optionsListHeader .optionsListHeaderExpiry:after	{ right:32%; left:auto; border-right:0; border-left:1px solid #3b3b3b; }
+.optionsListHeader .optionsListHeaderTarget:after	{ right:56%; }
+.optionsListHeader .optionsListHeaderExpiry:after	{ right:82%; }
+
+
+
+
+.positionTypeHighYieldBoundary .market, .positionTypeHighYieldBoundary .strike, .positionTypeBoundary .market, .positionTypeBoundary .strike { text-align:left; }
+.optionRow .HighYieldTouch,
+.optionRow .OneTouch,
+.optionRow .HighYieldHigh,
+.optionRow .Above					{ background: url("images/Icons/InstrumentExplanation/one-touch.png") no-repeat left center; }
+.optionRow .HighYieldTouchDown,
+.optionRow .TouchDown,
+.optionRow .HighYieldLow,
+.optionRow .Below					{ background: url("images/Icons/InstrumentExplanation/touch-down.png") no-repeat left center; }
+
+/* Option open position */
+.expiresLabel		{ margin:0 8px 0 4px; float:right; }
+.expires			{ float:right;}
+.tradingCloses		{ margin:0 8px 0 4px; float:left;}
+.tradingClosesLabel	{ float:left; }
+
+.positionTypePanel .marketLabel,
+.positionTypePanel .strikeLabel	{ left:initial; right:4px; }
+
+.buy					{ float:left; }
+.amountTextBox,
+.errorMessage			{ float:right; }
+
+.returnAmount,
+.returnPercent			{ float:left; }
+.returnMessage,
+
+.marketTargetPanel,					
+.marketTargetPanel .strikeLabel,
+.marketTargetPanel .marketLabel,		
+.marketTargetPanel .strike,
+.marketTargetPanel .market,
+
+.closePanel,
+.closeAtLabel,
+.close						{ float:right; }
+.closeAt					{ float:right; padding:0 3px 0 0; }
+.closePanel .errorMessage 	{ margin:55px 0 0; right:10px; }
+
+.positionProperties div		{ float:right; }
+
+/* Open Trades */
+.positionBox .asset			{ padding:0 2px 0 0; float:right; }
+.positionBox .positionType	{ float:left; }
+.positionBox .marketLabel,
+.positionBox .strikeLabel 	{ float:right; padding:5px 6px 0 0; }
+.positionBox .strike,
+.positionBox .market,
+.positionBox .invested		{ float:right; }
+.positionBox .investedLabel	{ float:right; padding:0 6px 0 0; }
+
+/* Trading History */
+.positionHistoryRow .positionHistoryRowAdditionalDataLabel	{ float:right; text-align:left; }
+.positionHistoryRow .positionHistoryRowAdditionalDataValue	{ float:left; text-align:right; }
+
+/* Change password */
+.changePassword .form .fieldError	{ margin-left:0; margin-right:35%; }
+
+/* My Account */
+.myAccountPageLabel			{ float:right; text-align:right; }
+.myAccountPageData			{ float:left; text-align:left; }
+.myAccountPageCustomerNamePanel .myAccountPageData		{ padding:0 5px 0 0;}
+
+/* Card Details */
+.cardDetails .field_expiryDate .listBoxMobile:first-child	{ margin-left:6%; margin-right:0; }
+.cardDetails .fieldError									{ margin-right:35%; margin-left:0; }

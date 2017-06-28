@@ -1,0 +1,16 @@
+.openAccount .asteriskLabel:nth-child(19)	{ line-height:19px; }
+
+.cardDetails .field_creditCardNumber label,
+.cardDetails .field_cw label					{ font-size:11px; }
+
+.buyPanel .buy 									{ font-size: 12px; }
+
+/* btn on MyAccount page */
+.myAccountPage .myAccountPageButton				{ line-height:30px; }
+.myAccountPage .myAccountPageButton:last-child	{ line-height:60px; }
+
+/* for screen resolution < 345px */
+@media only screen and ( max-width: 345px) {	
+	.balanceLabel { max-width:65px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; } /* fix for balance label overlap on small resolution */
+	.pageContainer .tradingClosesLabel { width:80px; line-height:16px; }	
+} 

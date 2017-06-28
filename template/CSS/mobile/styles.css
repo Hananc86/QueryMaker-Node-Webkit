@@ -1,0 +1,595 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,400,300&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic);
+
+*		{ margin:0; padding:0; }
+a		{ text-decoration:none; outline:none; }
+img		{ border:none; display:block; }
+
+body			{ font-family:'Roboto', Arial, Helvetica, sans-serif; background:#f6f6f6; }
+.mainPanel		{ width:100%; min-height:480px; }
+
+/*********************************
+Header
+*********************************/
+.headerPanel					{ height:50px; border-bottom:1px solid #fff; }
+.headerPanel:after				{ content:" "; display:table; clear:both; }
+.logo							{ width:100px; height:50px; background:url(images/logo.png) no-repeat 5px center; float:left; background-size:85%; }
+.balance						{ margin:0 10px 0 0; font:11px/50px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; float:right; }
+.balanceLabel					{ margin:0 5px 0 10px; font:11px/50px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; float:right; }
+.topPanelLanguagesList			{ margin:13px 0 0; float:right; }
+.topPanelLanguagesSelection		{ width:75px; height:24px; border:none; font:13px/24px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; background:none; }
+
+/*********************************
+Navigation Panel
+*********************************/
+.navigationPanel			{ height:50px; line-height:50px; margin-bottom:2px; background:#dae5ea; box-shadow:0 2px 3px -1px #bccfd8; }
+.navigationPanel:after		{ content:" "; display:table; clear:both; }
+.back						{ max-width:40px; width:10%; height:100%; background:url("images/Sprites/nav.png") 12px 15px no-repeat; float:left; }
+.home						{ max-width:40px; width:10%; height:100%; background:url("images/Sprites/nav.png") -43px 15px no-repeat; float:right; }
+.title						{ width:80%; font:16px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; line-height:normal; display:inline-block; vertical-align:middle; }
+
+/*********************************
+Footer
+*********************************/
+.footer			{ padding-bottom:15px; border-top:1px solid #fff; }
+.footerTop		{ height:10px; }
+.footerText		{ padding:10px 30px; font:12px/15px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; text-align:center; }
+.footer a 		{ color:#c83c39; text-decoration:underline; }
+.fullSite		{ margin:0 auto; padding:5px 0; font:14px/15px'Roboto', Arial, Helvetica, sans-serif; color:#c83c39; text-align:center; text-decoration:underline; text-transform:uppercase; }
+
+/*********************************
+Forms - Layout - Flex
+*********************************/
+.form,
+.mobileFirstNameLabel,
+.mobileLastNameLabel,
+.mobileUserNameLabel,
+.mobileEmailLabel,
+.mobilePhoneLabel,
+.mobileCurrencyLabel,
+.userNameLabel,
+.passwordLabel,
+.field,
+.field .collection,
+.field .label 			{ display:-webkit-flex; display:-moz-flex; display:-ms-flex; display:-o-flex; display:flex; }
+
+.form 					{ -webkit-flex-wrap:wrap; -moz-flex-wrap:wrap; -ms-flex-wrap:wrap; -o-flex-wrap:wrap; flex-wrap:wrap; }
+.asteriskLabel 			{ -webkit-flex-basis:3%; -moz-flex-basis:3%; -ms-flex-basis:3%; -o-flex-basis:3%; flex-basis:3%; }
+.mobileFirstNameLabel,
+.mobileLastNameLabel,
+.mobileUserNameLabel,
+.mobileEmailLabel,
+.mobilePhoneLabel,
+.mobileCurrencyLabel,
+.userNameLabel,
+.passwordLabel 			{ -webkit-flex-basis:32%; -moz-flex-basis:32%; -ms-flex-basis:32%; -o-flex-basis:32%; flex-basis:32%; }
+.field 					{ -webkit-flex-basis:65%; -moz-flex-basis:65%; -ms-flex-basis:65%; -o-flex-basis:65%; flex-basis:65%; -webkit-flex-wrap:wrap; -moz-flex-wrap:wrap; -ms-flex-wrap:wrap; -o-flex-wrap:wrap; flex-wrap:wrap; }
+.field .collection 		{ -webkit-flex-basis:100%; -moz-flex-basis:100%; -ms-flex-basis:100%; -o-flex-basis:100%; flex-basis:100%; }
+.field .label 			{ max-width:35%; -webkit-flex-basis:35%; -moz-flex-basis:35%; -ms-flex-basis:35%; -o-flex-basis:35%; flex-basis:35%; }
+
+.saveCreditCard,
+.startTrading,
+.goToDeposit,
+.formButton,
+.formButton_disabled,
+.openAccountButtonOpenAccountPage,
+.openAccountButton,
+.loginButton,
+.externalPspLink,
+.dinPayPspLink,
+.externalApiPspLink,
+.creditCardLink,
+.depositMainHome 		{ -webkit-flex-basis:100%; -moz-flex-basis:100%; -ms-flex-basis:100%; -o-flex-basis:100%; flex-basis:100%; }
+
+/*********************************
+Forms - Fields
+*********************************/
+.form				{ max-width:300px; margin:20px auto 15px; }
+.asteriskLabel		{ font:14px/39px 'Roboto', Arial, Helvetica, sans-serif; color:#c62828; }
+.mobileFirstNameLabel,
+.mobileLastNameLabel,
+.mobileUserNameLabel,
+.mobileEmailLabel,
+.mobilePhoneLabel,
+.mobileCurrencyLabel,
+.userNameLabel,
+.passwordLabel		{ height:39px; font:14px/19px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; align-items:center; }
+.field				{ margin:0 0 20px; }
+
+.field .label						{ font:14px/19px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; align-items:center; }
+.field .gwt-TextBox, .field .gwt-PasswordTextBox,
+.field .listBoxMobile_background	{ width:100%; height:38px; border:none; border-top:1px solid #fff; font:14px/38px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; background:#cfd8dd; box-shadow:inset 0px 3px 11px -2px rgba(0,0,0,0.6); text-indent:10px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.field .listBoxMobile_background	{ padding:0 20px 0 0; background:#cfd8dd url("images/form-arrow.png") 94% center no-repeat; box-sizing:border-box; }
+.field .listBoxMobile				{ width:100%; height:38px; border:none; font:bold 14px/36px Arial, Helvetica, sans-serif; position:relative; }
+.field .listBoxMobile select		{ width:100%; height:100%; position:absolute; top:0; left:0; opacity:0; }
+.field a							{ color:#c83c39; text-decoration:underline; }
+
+.formErrors			{ width:100%; margin:10px 0; padding:15px 0 15px 0; border-width:1px 0; border-style:dashed; border-color:#c83c39; font:13px/18px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; background:url("images/form-error-icon.png") 2px 12px no-repeat; background-size:20px; text-indent:25px; }
+.formErrors span	{ display:block; }
+.fieldError			{ margin:5px 0 0; font:12px/12px 'Roboto', Arial, Helvetica, sans-serif; color:#c83c39; }
+
+.saveCreditCard,
+.startTrading,
+.goToDeposit,
+.formButton,
+.formButton_disabled,
+.openAccountButtonOpenAccountPage,
+.openAccountButton,
+.loginButton,
+.externalPspLink,
+.externalApiPspLink,
+.dinPayPspLink,
+.creditCardLink,
+.myAccountPageButton	{ height:60px; border-top:1px solid #fff; border-bottom:2px solid #8f2020; border-radius:3px; font:25px/60px 'Roboto', Arial, Helvetica, sans-serif; color:#fff; background:#d32f2f; text-align:center; text-transform:uppercase; }
+.formButton_disabled	{ background:#ccc; border-bottom-color:#aaa; }
+
+/*********************************
+Open Account - Layout - Flex
+*********************************/
+.openAccountDottedLine									{ -webkit-flex-basis:100%; -moz-flex-basis:100%; -ms-flex-basis:100%; -o-flex-basis:100%; flex-basis:100%; }
+.openAccount .mobileCurrencyLabel						{ -webkit-flex-basis:40%; -moz-flex-basis:40%; -ms-flex-basis:40%; -o-flex-basis:40%; flex-basis:40%; }
+.openAccount .field_mobileCurrency						{ -webkit-flex-basis:57%; -moz-flex-basis:57%; -ms-flex-basis:57%; -o-flex-basis:57%; flex-basis:57%; }
+.field.field_mobileTermsAndConditions					{ -webkit-flex-basis:100%; -moz-flex-basis:100%; -ms-flex-basis:100%; -o-flex-basis:100%; flex-basis:100%; -webkit-flex-wrap:nowrap; -moz-flex-wrap:nowrap; -ms-flex-wrap:nowrap; -o-flex-wrap:nowrap; flex-wrap:nowrap; }
+.field.field_mobileTermsAndConditions .collection		{ -webkit-flex-basis:15%; -moz-flex-basis:15%; -ms-flex-basis:15%; -o-flex-basis:15%; flex-basis:15%; }
+.field.field_mobileTermsAndConditions .label			{ max-width:85%; -webkit-flex-basis:85%; -moz-flex-basis:85%; -ms-flex-basis:85%; -o-flex-basis:85%; flex-basis:85%; }
+.field.field_mobileTermsAndConditions .gwt-CheckBox		{ display:-webkit-flex; display:-moz-flex; display:-ms-flex; display:-o-flex; display:flex; justify-content:center; }
+
+/*********************************
+Open Account
+*********************************/
+.openAccount											{ background:#ecf0f1; }
+.openAccountDottedLine									{ margin:0 0 20px; border-top:1px dashed #263238; }
+.field_mobileTermsAndConditions							{ padding:15px 0; border-width:1px 0; border-style:dashed; border-color:#d32f2f; }
+.field_mobileTermsAndConditions .label					{ margin:0; font:15px/18px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; display:inline-block; }
+.field_mobileTermsAndConditions .gwt-CheckBox			{ width:100%; align-items:center; }
+.field_mobileTermsAndConditions .gwt-CheckBox input		{ width:20px; height:20px; }
+.loginOpenAccount,
+.forgotPasswordRedirectButton							{ margin-bottom:15px; font:20px/30px 'Roboto', Arial, Helvetica, sans-serif; color:#c83c39; text-align:center; text-decoration:underline; }
+
+.login .home, .openAccount .home { display:none; }	/* disabling home icon on login & openAccount page */
+
+/*********************************
+Login - Layout - Flex
+*********************************/
+.login .form .field_userName,
+.login .form .field_email			{ -webkit-flex-basis:100%; -moz-flex-basis:100%; -ms-flex-basis:100%; -o-flex-basis:100%; flex-basis:100%; }
+.login .field_userName .collection,
+.login .field_email .collection		{ -webkit-flex-basis:65%; -moz-flex-basis:65%; -ms-flex-basis:65%; -o-flex-basis:65%; flex-basis:65%; }
+
+/*********************************
+Login
+*********************************/
+.login .form										{ margin:50px auto 0; padding:0; }
+.login .openAccountButton							{ width:300px; margin:0 auto 20px; }
+.login .forgotPasswordButton						{ width:300px; margin:0 auto; text-align:right; }
+.login .forgotPasswordButton a						{ font:14px/40px 'Roboto', Arial, Helvetica, sans-serif; color:#c83c39; text-decoration:underline; }
+.loginButton										{ margin:40px 0 0; background:#087c91; border-bottom-color:#075c6b; }
+.login .forgotPasswordRequiredText + .form .fieldError	{ margin-left:35%; -webkit-flex-basis:65%; -moz-flex-basis:65%; -ms-flex-basis:65%; -o-flex-basis:65%; flex-basis:65%; }
+
+/*********************************
+Forgot Password
+*********************************/
+.forgotPasswordText						{ width:300px; margin:20px auto; font:14px/18px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; }
+.forgotPasswordText a					{ color:#c83c39; text-decoration:underline; }
+.forgotPasswordRequiredText				{ width:300px; margin:20px auto 0; text-align:right; }
+.forgotPasswordRequiredText p			{ font:13px/20px 'Roboto', Arial, Helvetica, sans-serif; color:#c83c39; }
+.forgotPasswordRequiredText + .form		{ margin:0 auto 15px; }
+.login .formInfo						{ margin:10px 0; padding:15px; border-width:1px 0; border-style:dashed; border-color:#c83c39; font:13px/18px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; }
+
+/*********************************
+Open Account Success
+*********************************/
+.openAccountSuccess					{ background:#1f1f1f; }
+.openAccountSuccessHeader			{ padding:15px 0 0; }
+.openAccountSuccessHeader .gwt-Label{ padding:0 15px 15px; font:14px/14px Arial, Helvetica, sans-serif; color:#fff; }
+.accountDetails						{ padding:40px 0; background:#161616 url("images/Sprites/registration-success-details-bg.png") repeat-x left -10px; }
+.accountDetails .gwt-HTML			{ padding:0 0 20px 60px; font:14px/14px Arial, Helvetica, sans-serif; color:#a6a6a6; }
+.accountDetails .gwt-HTML span		{ font:bold 24px/24px Arial, Helvetica, sans-serif; color:#fff; }
+
+/*********************************
+Menu
+*********************************/
+.menu							{ max-width:320px; margin:15px auto; }
+.menu:after 					{ content:""; display:table; clear:both; }
+.menu div						{ width:96px; height:120px; margin:5px; font:13px/15px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; background:url("images/Sprites/menu.png") no-repeat; display:inline-block; vertical-align:top; text-align:center; }
+.menu a							{ width:97px; padding:85px 0 0; display:block; }
+.menu .menu_HiLo				{ background-position:9px 11px; }
+.menu .menu_OneTouch			{ background-position:-83px 11px; }
+.menu .menu_Boundary			{ background-position:-175px 11px; }
+.menu .menu_ShortTermHighLow	{ background-position:-267px 11px; }
+.menu .menu_AboveBelow			{ background-position:-358px 11px; }
+.menu .menu_HighYieldTouch		{ background-position:-450px 11px; }
+.menu .menu_HighYieldBoundary	{ background-position:-543px 11px; }
+.menu .menu_myPortfolio			{ background-position:-633px 11px; }
+.menu .menu_deposit				{ background-position:-723px 11px; }
+.menu .menu_tradeHistory		{ background-position:-815px 11px; }
+.menu .menu_myAccount			{ background-position:-997px 11px; }
+.menu .menu_withdrawal			{ background-position:-1087px 11px; }
+
+.tools		{ max-width:320px; margin:10px auto; padding:0 20px; text-align:right; }
+.logout		{ min-width:100px; height:39px; padding:0 10px; border-radius:3px; font:12px/39px 'Roboto', Arial, Helvetica, sans-serif; color:#fff; background:#282828; display:inline-block; text-align:center; text-transform:uppercase; }
+
+/*********************************
+Trading
+*********************************/
+.trading				{ min-height:439px; background:#2a2b2a; }
+
+/*********************************
+Trading Menu
+*********************************/
+.menuListButton			{ height:40px; line-height:40px; text-align:center; position:relative; background: url("images/Sprites/sprites-repeats.png") repeat-x 0 -130px; }
+.menuListButtonSelected	{ background-position:0 -180px; }
+.menuListLabel			{ width:100%; line-height:normal; display:inline-block; vertical-align:middle; font-size:11px; font-weight:500; text-transform:uppercase; }
+.menuListButtonSelected .menuListLabel	{ color:#515151; }
+.menuListArrow			{ padding:0 0 0 10px; font:11px/14px Arial, Helvetica, sans-serif; background: url("images/menu-list-arrow.png") no-repeat right center; }
+.menuListButtonSelected .menuListArrow	{ background: url("images/menu-list-arrow-selected.png") no-repeat right center; }
+
+.menuList				{ width:100%; text-align:left; background:#cecece; z-index:1; position:absolute; }
+.menuListItem			{ height:35px; padding:0 0 0 10px; font-size:12px; line-height:35px; color:#333; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; }
+div.menuListItem:active	{ color:#fff; background:#3c3c3c; }
+.tradingMenuInstruments .menuListItem:last-child			{ display: none; }
+.tradingHistoryFilterInstruments .menuListItem:last-child	{ display: none; }
+
+.tradingMenu			{ height:40px; }
+.tradingMenu:after		{ content:" "; clear:both; display:table; }
+.tradingMenu .menuListButton			{ width:33%; float:left; }
+.tradingMenu .tradingMenuInstruments	{ width:39%; }
+.tradingMenu .tradingMenuAssets			{ width:28%; }
+
+/*********************************
+Options List
+*********************************/
+.optionsListHeader			{ height:60px; line-height:60px; border-top: 1px solid #303030; position:relative; }
+.optionsListHeader:after	{ content:" "; clear:both; display:table; }
+.optionsListHeader div		{ padding:0 3px; text-align:center; font-weight:500; font-size:12px; line-height:normal; vertical-align:middle; display:inline-block; color:#fff; box-sizing:border-box; }
+.optionsListHeader .optionsListHeaderAsset	{ width:32%; padding-left:3%; text-align:left; }
+.optionsListHeader .optionsListHeaderTarget	{ width:24%; }
+.optionsListHeader .optionsListHeaderExpiry	{ width:26%; }
+.optionsListHeader .optionsListHeaderReturn	{ width:17%; }
+.optionsListHeader .optionsListHeaderAsset:after,
+.optionsListHeader .optionsListHeaderTarget:after,
+.optionsListHeader .optionsListHeaderExpiry:after	{ left:32%; content:""; display:inline-block; height:60px; border-right:1px solid #3b3b3b; position:absolute; top:0; }
+.optionsListHeader .optionsListHeaderTarget:after	{ width:1px; left:56%; }
+.optionsListHeader .optionsListHeaderExpiry:after	{ width:2px; left:82%; }
+
+
+
+.optionsListNoOptions		{ padding:10px 0; text-align:center; font-size:12px; line-height:55px; color:#fff; }
+.optionsListLoading			{ height:100px; background:url("images/loading-options.gif") no-repeat center center; }
+
+.optionRow					{ height:55px; line-height:55px; background:#404040; }
+.optionRowOdd				{ background:#585858; }
+.optionRow:after			{ content:" "; clear:both; display:table; }
+.optionRow div				{ text-align:center; float:left; font-size:12px; line-height:55px; color:#fff; }
+.optionRow .optionRowAsset			{ width: 25%; padding:0 4% 0 3%; border-right:1px solid #505050; text-align:left;  color:#b9d239; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; }
+.optionRow .optionRowTarget			{ width: 24%; border-right:1px solid #505050; }
+.optionRow .optionRowTargetBoundary	{ line-height:27px; }
+.optionRow .optionRowExpiry			{ width:26%; border-right:1px solid #505050; }
+.optionRow .optionRowReturn			{ width:17%; }
+.optionRow .optionRowOpensAt		{ width:64%; float:none; display:inline-block; color:#fff; line-height:normal; vertical-align:middle; }
+.optionRowOdd div					{ border-color:#606060; }
+.optionRow .HighYieldTouch,
+.optionRow .OneTouch,
+.optionRow .HighYieldHigh,
+.optionRow .Above,
+.optionRow .HighProbHigh		{ background: url("images/Icons/InstrumentExplanation/one-touch.png") no-repeat right center; }
+.optionRow .HighYieldTouchDown,
+.optionRow .TouchDown,
+.optionRow .HighYieldLow,
+.optionRow .Below,
+.optionRow .HighProbLow			{ background: url("images/Icons/InstrumentExplanation/touch-down.png") no-repeat right center; }
+
+/*********************************
+Expiration Panel
+*********************************/
+.expirationPanel			{ height:37px; background:#161616; }
+.expiresLabel				{ margin:0 4px 0 8px; float:left; font:12px/37px Arial, Helvetica, sans-serif; color:#838383; }
+.tradingClosesLabel			{ float:right; font:12px/37px Arial, Helvetica, sans-serif; color:#838383; }
+.expires					{ float:left; font:bold 12px/37px Arial, Helvetica, sans-serif; color:#9d9c9c; }
+.tradingCloses				{ width:35px; min-width:35px; height:100%; margin:0 4px 0 8px; padding:0 0 0 15px; float:right; font:bold 12px/37px Arial, Helvetica, sans-serif; color:#b89026; background: url("images/sand-clock.png") no-repeat left 11px; }
+
+/*********************************
+Expiration Panel
+*********************************/
+.positionTypePanel	        	{ min-height:180px; background:#ddd; }
+.close,
+.positionTypeButton				{ width:91px; height:32px; margin:0 auto; border:1px solid #000; text-align:center; font:14px/32px Arial, Helvetica, sans-serif; color:#fff; background: url("images/Sprites/sprites-repeats.png") repeat-x 0 -51px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; }
+
+.explanation									{ padding:10px 8px 15px; font:12px/15px Arial, Helvetica, sans-serif; color:#000; }
+.explanation .textOptionView_explanationMarket	{ color:#80a125; }
+.explanation .textOptionView_explanationTarget	{ color:#eb8d1d; }
+
+.marketPanel					{ height:30px; margin:7px 18px; text-align:center; position:relative; }
+.positionTypePanel .marketLabel	{ position:absolute; left:4px; font:bold 12px/30px Arial, Helvetica, sans-serif; color:#505050; }
+.positionTypePanel .market		{ font:bold 18px/30px Arial, Helvetica, sans-serif; color:#80a125; }
+
+.strikePanel					{ height:30px; margin:7px 19px; text-align:center; position:relative; }
+.positionTypePanel .strikeLabel	{ position:absolute; left:4px; font:bold 12px/30px Arial, Helvetica, sans-serif; color:#505050; }
+.positionTypePanel .strike		{ font:bold 18px/30px Arial, Helvetica, sans-serif; color:#eb8d1d; }
+
+.buttonsContainer:after			{ content:" "; clear:both; display:table; }
+.dataContainer					{ width:62%; border-right:1px solid #454545; float: left; }
+
+.positionTypeHighLow .marketPanel			{ border-top:1px solid #454545; border-bottom:1px solid #454545; }
+
+.positionTypeOneTouch .positionTypeButton	{ margin:0 24px; display:inline-block; }
+.positionTypeAboveBelow .buttonsContainer,
+.positionTypeHighYieldTouch .buttonsContainer,
+.positionTypeOneTouch .buttonsContainer		{ margin:0 18px; padding:12px 0; border-top:1px solid #454545; border-bottom:1px solid #454545; text-align:center; }
+.positionTypeAboveBelow .marketPanel,
+.positionTypeAboveBelow .strikePanel,
+.positionTypeHighYieldTouch .marketPanel,
+.positionTypeHighYieldTouch .strikePanel,
+.positionTypeOneTouch .marketPanel,
+.positionTypeOneTouch .strikePanel			{ margin:0 18px; }
+
+.positionTypeHighYieldBoundary .buttonsContainer,
+.positionTypeBoundary .buttonsContainer		{ width:37%; float:right; }
+.positionTypeHighYieldBoundary .positionTypeButton	{ margin:37px auto; }
+.positionTypeBoundary .positionTypeButton	{ margin:15px auto; }
+.positionTypeHighYieldBoundary .marketPanel,
+.positionTypeBoundary .marketPanel			{ margin:0 0 0 18px; padding:4px 0; border-top:1px solid #454545; border-bottom:1px solid #454545; }
+.positionTypeHighYieldBoundary .strikePanel,
+.positionTypeBoundary .strikePanel			{ margin:0 0 0 18px; padding:3px 0; }
+.positionTypeHighYieldBoundary .market,
+.positionTypeHighYieldBoundary .strike,
+.positionTypeBoundary .market,
+.positionTypeBoundary .strike				{ text-align:right; padding: 0 10px; }
+.positionTypeHighYieldBoundary:after,
+.positionTypeBoundary:after					{ content:" "; clear:both; display:table; }
+
+/*********************************
+Trading Slip
+*********************************/
+.tradingSlipPanel				{ min-height:180px; padding:0 8px; background:#ddd; }
+.yourSelection					{ padding:7px 0 9px; font:12px/15px Arial, Helvetica, sans-serif; color:#505050; }
+.yourSelection span				{ font:bold 14px/15px Arial, Helvetica, sans-serif; color:#84a628; }
+
+.buyPanel						{ position:relative; }
+.buyPanel:after					{ content:" "; clear:both; display:table; }
+.amountLabel					{ padding:7px 0 4px; font:bold 14px/15px Arial, Helvetica, sans-serif; color:#505050; }
+.amountTextBox					{ width:178px; height:38px; border:1px solid #f0efef; float:left; font:16px/38px Arial, Helvetica, sans-serif; background: url("images/Sprites/sprites-repeats.png") repeat-x 0 -222px; }
+.buy							{ width:113px; height:38px; border:1px solid #313131; float:right; text-align:center; text-transform: uppercase; font:16px/38px Arial, Helvetica, sans-serif; color:#fff; background: url("images/Sprites/sprites-repeats.png") repeat-x 0 -272px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; }
+
+.tradeLimits div div			{ display:inline-block; margin:2px; }
+
+.errorMessage					{ width:280px; float:left; font:12px/15px Arial, Helvetica, sans-serif; color:#f00; }
+.errorMessage a					{ color:#f00; }
+.loading						{ width:113px; height:38px; float:right; background:url("images/loading-position.gif") no-repeat center center; }
+
+.returnLabel					{ padding:15px 0 10px; font:bold 14px/15px Arial, Helvetica, sans-serif; color:#505050; }
+.returnSuccess,
+.returnFailure					{ padding:0 0 3px; }
+.returnSuccess:after,
+.returnFailure:after			{ content:" "; clear:both; display:table; }
+.returnAmount					{ float:right; font:bold 14px/15px Arial, Helvetica, sans-serif; color:#000; }
+.returnPercent					{ width:55px; margin:0 5px; float:right; font:12px/14px Arial, Helvetica, sans-serif; color:#818181; }
+.returnMessage					{ float:left; font:bold 12px/14px Arial, Helvetica, sans-serif; color:#818181; }
+
+/*********************************
+Graph
+*********************************/
+.graph			{ height:181px; }
+.graphFrame		{ width:100%; height:100%; }
+
+/************************************************
+Graph Guides
+*************************************************/
+.graph_guide_option 					{ color:#8e8e8e; top:100; bottom:30; width:1; }
+.graph_guide_option_background 			{ color:#b1b4b4; }
+.graph_guide_in_the_money 				{ color:#8e8e8e; top:100; bottom:37; width:1; }
+.graph_guide_in_the_money_background 	{ color:#99cc00; }
+.graph_guide_out_of_money 				{ color:#8e8e8e; top:100; bottom:21; width:1; }
+.graph_guide_out_of_money_background 	{ color:#ff3333; }
+.graph_bullet 							{ color:#898989; width:5; height:3; }
+.graph_order_bullet 					{ color:#000000; width:5; height:3; }
+.graph_waiting_for_expiry 				{ color:#e84f3f; top:100; }
+
+/*********************************
+Position Page
+*********************************/
+.position						{ background:#cbcaca; }
+
+.closeExplanation				{ height:36px; padding:0 30px; text-align:center; font:11px/17px Arial, Helvetica, sans-serif; color:#cecece; background:#656666 url("images/Sprites/sprites-repeats.png") repeat-x 0 -415px; }
+
+.positionDataPanel				{ height:94px; background:url("images/Sprites/sprites-repeats.png") repeat-x 0 -316px; }
+
+.marketTargetPanel				{ width:154px; padding:8px; float:left; }
+.marketTargetPanel .strikeLabel	{ width:70px; height:38px; float:left; font:bold 13px/15px Arial, Helvetica, sans-serif; color:#777; }
+.marketTargetPanel .strike		{ width:64px; height:38px; float:left; font:bold 13px/15px Arial, Helvetica, sans-serif; color:#eb8d1d; }
+.marketTargetPanel .strike:after{ content:" "; clear:both; display:table; }
+.marketTargetPanel .marketLabel	{ width:70px; height:31px; float:left; font:bold 13px/15px Arial, Helvetica, sans-serif; color:#777; }
+.marketTargetPanel .market		{ width:64px; height:31px; float:left; font:bold 13px/15px Arial, Helvetica, sans-serif; color:#656565; }
+.positionBox .market:after		{ content:" "; clear:both; display:table; }
+
+.closePanel						{ width:130px; padding:8px; float:left; }
+.closeWillBeAvailable,
+.closeNotAvailable				{ font:13px/15px Arial, Helvetica, sans-serif; }
+.closePanel .returnAmountLabel	{ float:left; font:bold 13px/15px Arial, Helvetica, sans-serif; color:#777; }
+.closePanel .returnAmount		{ padding:0 0 0 3px; float:left; font:bold 15px/15px Arial, Helvetica, sans-serif; }
+.closeAt						{ padding:0 0 0 3px; float:left; font:bold 15px/15px Arial, Helvetica, sans-serif; color:#eb8d1d; }
+.closeAt:after					{ content:" "; clear:both; display:table; }
+.closeAtLabel					{ float:left; font:13px/15px Arial, Helvetica, sans-serif; }
+.close							{ margin:13px 0 0; float:left; }
+.closePanel .loading			{ width:93px; height:34px; margin:13px 0 0; float:left; }
+.closePanel .errorMessage		{ width:170px; margin:65px 0 0; left:10px; position:absolute; }
+
+.positionProperties				{ max-width:320px; padding:5px 12px; }
+.positionProperties div			{ width:155px; display:inline-block; font:13px/18px Arial, Helvetica, sans-serif; color:#505050; }
+.positionProperties .data		{ width:140px; font:bold 13px/18px Arial, Helvetica, sans-serif; }
+.positionProperties .data:after	{ content:" "; clear:both; display:table; }
+
+/*********************************
+My Open Trades
+*********************************/
+.myPortfolio					{ min-height:439px; }
+.positionsContainer				{ margin:0 auto; padding:17px 0 0; }
+.positionsContainer:after		{ content:" "; clear:both; display:table; }
+.noPositions					{ height:300px; padding:10px 0; text-align:center; font:12px/16px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; }
+
+/*********************************
+Position Box
+*********************************/
+.positionBox					{ width:140px; height:141px; margin:0 8px 17px; font-size:12px;  border:2px solid #767777; float:left; background:url("images/Sprites/sprites-repeats.png") repeat-x 0 -479px; }
+.positionBox .asset				{ width:110px; height:24px; padding:0 0 0 2px; float:left; line-height:22px; color:#e5e5e5; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; }
+.positionBox .positionType		{ width:24px; height:24px; float:right; }
+.positionBox .positionType:after{ content:" "; clear:both; display:table; }
+.positionBox .expiry			{ width:100%; height:23px; float:left; text-align:center; line-height:23px; }
+.positionBox .expiry:after		{ content:" "; clear:both; display:table; }
+.positionBox .strikeLabel		{ width:55px; height:30px; padding:5px 0 0 6px; float:left; line-height:15px; color:#1f1f1f; }
+.positionBox .strike			{ width:69px; height:30px; padding:5px 0 0; float:left; line-height:15px; color:#656565; }
+.positionBox .strike:after		{ content:" "; clear:both; display:table; }
+.positionBox .marketLabel		{ width:55px; height:31px; padding:5px 0 0 6px; float:left; line-height:15px; color:#1f1f1f; }
+.positionBox .market			{ width:69px; height:31px; padding:5px 0 0; float:left; line-height:15px; color:#656565; }
+.positionBox .market:after		{ content:" "; clear:both; display:table; }
+.positionBox .investedLabel		{ width:65px; height:23px; padding:0 0 0 6px; float:left; line-height:23px; color:#acacac; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; }
+.positionBox .invested			{ width:69px; height:23px; float:left; line-height:23px; color:#fff; }
+
+.mainPanel .positionBox_spot_inMoney		{ color:#80a125; }
+.mainPanel .positionBox_spot_outMoney		{ color:#d41b07; }
+
+/*********************************
+Deposit - Layout - Flex
+*********************************/
+.cardDetails .field					{ max-width:100%; -webkit-flex-basis:100%; -moz-flex-basis:100%; -ms-flex-basis:100%; -o-flex-basis:100%; flex-basis:100%; }
+.cardDetails .field	.collection		{ max-width:65%; -webkit-flex-basis:65%; -moz-flex-basis:65%; -ms-flex-basis:65%; -o-flex-basis:65%; flex-basis:65%; }
+.cardDetails .field_expiryDate .listBoxMobile { display:-webkit-flex; display:-moz-flex; display:-ms-flex; display:-o-flex; display:flex; }
+.cardDetails .fieldError			{ margin-left:35%; -webkit-flex-basis:65%; -moz-flex-basis:65%; -ms-flex-basis:65%; -o-flex-basis:65%; flex-basis:65%; }
+
+/*********************************
+Deposit
+*********************************/
+.externalPspLink,
+.externalApiPspLink,
+.dinPayPspLink,
+.creditCardLink,
+.depositMainHome						{ max-width:280px; margin:20px auto; }
+.externalPspLink,
+.externalApiPspLink						{ background:#087c91; border-bottom-color:#075c6b; }
+.creditCardLink							{ background:#d32f2f; }
+.dinPayPspLink							{ background:#068c8c; border-bottom:2px solid #033c3c; }
+.depositMainHome a:before				{ width:15px; height: 13px; content:""; display: inline-block; background:url("images/Sprites/nav.png") -92px 3px no-repeat;  }
+.depositMainHome a						{ color: #515151;}
+.depositNavPage > div:first-child		{ margin-top:30px; }
+
+.secureConnection						{ height:35px; background:#282828; text-align:center; }
+.secureConnection span					{ padding:7px 0 6px 20px; font:10px/35px "Roboto", Arial, Helvetica, sans-serif; color:#c1c1c1; background:url("images/secure-connection-icon.png") no-repeat left top; }
+
+.cardDetails .fieldError				{ display:inline-block; }
+
+.cardDetails .field_expiryDate .listBoxMobile				{ width:47%; flex:1; }
+.cardDetails .field_expiryDate .listBoxMobile:first-child	{ margin-right:6%; }
+.cardDetails .field_expiryDate .listBoxMobile > div			{ max-width:92px; }
+
+.newCreditCard			{ width:183px; height:36px; margin:0 auto 10px; border:1px solid #5d5d5d; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; font:16px/34px Arial, Helvetica, sans-serif; color:#fff; background:url("../../../../Skins/images/Mobile/OptionFair/Sprites/sprites-repeats.png") repeat-x 0 -902px; -moz-box-shadow:0 0 9px #000; -webkit-box-shadow:0 0 9px #000; box-shadow:0 0 9px #000; display:block; text-transform:uppercase; }
+.depositFooter			{ padding:10px 30px; border-top:1px solid #fff; font:12px/15px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; background:#dae5ea; text-align:center; }
+.depositFooterHeader	{ text-transform:uppercase; }
+
+.depositSuccessHeader					{ padding:15px 0 0; }
+.depositSuccessHeader .gwt-HTML,
+.suggestToSave .gwt-HTML				{ font:14px 'Roboto',Arial, Helvetica, sans-serif; }
+.suggestToSave							{ padding:40px 0; background:#161616 url("images/Sprites/registration-success-details-bg.png") repeat-x left -10px; }
+
+.cardDetails .depositFooter .fullSite 	{ display:none; }	/* disabling second link to HP in deposit page */
+
+/*********************************
+Deposit Success page 
+*********************************/
+.openAccountSuccess									{ background:none; }
+.depositSuccessHeader								{ padding:40px 0 0; width:320px; margin:0 auto; }
+.depositSuccessHeader .gwt-HTML 					{ padding:0; font:14px/16px 'Roboto',Arial, Helvetica, sans-serif; text-align:center; color:#000; }
+.depositSuccessHeader + .suggestToSave 				{ padding:20px 0 40px; width:300px; margin:0 auto; background:none; }
+.depositSuccessHeader + .suggestToSave + .footer 	{ background:#dae5ea; }
+.openAccountSuccess .saveCreditCard 				{ margin-top:20px; }
+.openAccountSuccess .startTrading 					{ margin-top:30px; }
+
+/*********************************
+Icons
+*********************************/
+.Call			{ background: url("images/Icons/PositionTypes/high.png") no-repeat center center; }
+.Put			{ background: url("images/Icons/PositionTypes/low.png") no-repeat center center; }
+.Touch			{ background: url("images/Icons/PositionTypes/touch.png") no-repeat center center; }
+.NoTouch		{ background: url("images/Icons/PositionTypes/no-touch.png") no-repeat center center; }
+.TouchDown		{ background: url("images/Icons/PositionTypes/touch-down.png") no-repeat center center; }
+.NoTouchDown	{ background: url("images/Icons/PositionTypes/no-touch-down.png") no-repeat center center; }
+.In				{ background: url("images/Icons/PositionTypes/in.png") no-repeat center center; }
+.Out			{ background: url("images/Icons/PositionTypes/out.png") no-repeat center center; }
+.Above			{ background: url("images/Icons/PositionTypes/above.png") no-repeat center center; }
+.Below			{ background: url("images/Icons/PositionTypes/below.png") no-repeat center center; }
+
+/*********************************
+My Account
+*********************************/
+.myAccountPageTextDataLayout		{ width:300px; margin:0 auto; }
+.myAccountPageDataPanel				{ padding:10px 0;  }
+.myAccountPageLabel					{ float:left; width:68%; font-size:14px; line-height:16px; text-align:left; }
+.myAccountPageData					{ float:right; width:30%; font-size:16px; line-height:16px; text-align:right; }	
+.myAccountPageDataPanel:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.myAccountPageCustomerNamePanel 	{ padding:30px 0 20px; text-align:center; }
+.myAccountPageCustomerNamePanel > div 	{ float:none; font-size:16px; width:auto; display:inline-block; text-align:center; }
+.myAccountPageCustomerNamePanel .myAccountPageData		{ padding-left:5px; color:#d32f2f; }
+.myAccountPageTotalBalancePanel		{ margin:20px 0 ; padding:20px 0; font-size:16px; border:1px dashed #263238; border-width:1px 0 1px 0; color:#0488c8; }
+.myAccountPageButton				{ margin:40px auto 20px; max-width:300px; border-bottom-color:#021b20; background:#282828; }
+.myAccountPageButton:last-child		{ margin-top:20px; background:#d32f2f; border-bottom-color:#8f2020; }
+
+/*********************************
+Change Password - Layout - Flex
+*********************************/		
+.changePassword .form .field_password,
+.changePassword .form .field_newPassword,
+.changePassword .form .field_retypePassword				{ -webkit-flex-basis:100%; -moz-flex-basis:100%; -ms-flex-basis:100%; -o-flex-basis:100%; flex-basis:100%; }
+.changePassword .field_password .collection,
+.changePassword .field_newPassword .collection,
+.changePassword .field_retypePassword .collection		{ -webkit-flex-basis:65%; -moz-flex-basis:65%; -ms-flex-basis:65%; -o-flex-basis:65%; flex-basis:65%; }	
+
+.changePassword .formInfo								{ margin:10px 0; padding:15px; border-width:1px 0; border-style:dashed; border-color:#c83c39; font:13px/18px 'Roboto', Arial, Helvetica, sans-serif; color:#263238; }		
+.changePassword .form .fieldError						{ margin-left:35%; -webkit-flex-basis:65%; -moz-flex-basis:65%; -ms-flex-basis:65%; -o-flex-basis:65%; flex-basis:65%; }
+
+/*********************************
+Trading History Page & Bonus Summary
+*********************************/
+.tradingHistoryFilter:after						{ content:" "; display:table; clear:both; }
+.tradingHistoryFilter .menuListButton			{ width:50%; float:left; }
+.tradingHistoryFilterFrom .menuList				{ margin-left:1px; }
+
+
+.positionsHistoryListHeader, .bonusStatusListHeader								{ height:60px; line-height:60px; border-top:1px solid #303030; border-bottom:1px solid #3b3b3b; background:#161616; }
+.positionsHistoryListHeader > div, .bonusStatusListHeader > div					{ width:33%; text-align:center; font-size:12px; line-height:normal; vertical-align:middle; color:#fff; display:inline-block; position:relative; overflow:hidden; }
+.positionsHistoryListHeader > div:before, .bonusStatusListHeader > div:before	{ content:" "; height:60px; font-size:0; border-left:1px solid #3b3b3b; left:-1px; top:55%; -webkit-transform:translateY(-55%); -ms-transform:translateY(-55%); transform:translateY(-55%); position:absolute; }
+
+.positionHistoryRow, .bonusStatusRow					{ background:#404040; border-bottom:1px solid #101010; }
+.positionHistoryRowOdd, .bonusStatusRowOdd				{ background:#585858; }
+.positionHistoryRowActive, .bonusStatusRowActive		{ background:#a6a6a6; }
+.positionHistoryRowData, .bonusStatusRowData			{ height:55px; line-height:55px; overflow:hidden; }
+
+.positionHistoryRowData > div, .bonusStatusRowData > div				{ width:33%; text-align:center; font-size:12px; line-height:normal; vertical-align:middle; color:#cfcfcf; display:inline-block; position:relative; }
+.positionHistoryRowData > div:before, .bonusStatusRowData > div:before	{ content:" "; height:55px; font-size:0; border-left:1px solid #3b3b3b; left:-1px; top:55%; -webkit-transform:translateY(-55%); -ms-transform:translateY(-55%); transform:translateY(-55%); position:absolute; }
+.positionHistoryRowOdd .positionHistoryRowData > div:before, 
+.bonusStatusRowOdd .bonusStatusRowData > div:before						{ border-color:#606060; }
+.positionHistoryRowActive .positionHistoryRowData > div:before, 
+.bonusStatusRowActive .bonusStatusRowData > div:before					{ border-color:#959595; }
+
+.positionsHistoryListHeader > div							{ width:20%; }
+.positionHistoryRowData > div								{ width:20%; }
+.positionHistoryRowData .positionHistoryRowInstrument		{ color:transparent; }
+
+.positionHistoryRowAdditionalData, .bonusStatusRowAdditionalData	{ background:#323232; }
+.positionHistoryRowAdditionalDataPanel								{ padding:10px 0; }
+.positionHistoryRow .positionHistoryRowAdditionalDataLabel			{ float:left; text-align:right; width:49%; font:13px/30px Arial, Helvetica, sans-serif; color:#929292; }
+.positionHistoryRow .positionHistoryRowAdditionalDataValue			{ float:right; text-align:left; width:49%; font:bold 13px/30px Arial, Helvetica, sans-serif; color:#cfcfcf; }
+.positionHistoryRowAdditionalDataPanel:after						{ content:" "; height:0; display:block; visibility:hidden; clear:both; }	
+
+.bonusStatusRowAdditionalDataPanel						{ padding:10px; width:300px; margin:0 auto; }
+.bonusStatusRow .bonusStatusRowAdditionalDataLabel		{ width:240px; display:inline-block; font:13px/30px Arial, Helvetica, sans-serif; color:#929292; }
+.bonusStatusRow .bonusStatusRowAdditionalDataValue		{ display:inline-block; font:bold 13px/30px Arial, Helvetica, sans-serif; color:#cfcfcf; }
+
+/* Version 8.1 - not enough funds popup msg */
+.notEnoughFundsPanel 				{ margin:0 5px; padding:20px 25px; font-family:Ariel, sans-serif; font-size: 14px; color: #ccc; border: 1px solid #929292; background: #161616; text-align: center; box-shadow: 0 0 9px 9px rgba(0,0,0,0.2); border-radius: 3px; }
+.notEnoughFundsLabel a 				{ font-family:Ariel, sans-serif;color: #ccc; text-decoration: underline; font-weight: bold; }
+.notEnoughFundsDeposit a 			{ font-family:Ariel, sans-serif;margin-top: 20px; padding: 5px 15px; background: #fff; display: inline-block; color: #161616; font-weight: bold; }
+.notEnoughFundsCloseWindow:after 	{ font-family:Ariel, sans-serif; position: absolute; color: #161616; right: 8px; background: #eee; top: 8px; height: 14px; width: 14px; border-radius: 3px; content: "x"; font-size: 12px; font-weight: bold; }
+
+.externalApiPspLink					{ display:none; } /* hide external psp deposit button */
+
+/* Version 8.3 - Non-Wagered Bonus */
+.bonusStatusRowWagerRequiredFalseMessage { text-align:center; font: 13px/30px Arial, Helvetica, sans-serif; color: #929292; }

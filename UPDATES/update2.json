@@ -1,0 +1,15 @@
+{
+    "Version": "2.8",
+    "releseUpdates": "",
+    "rootFiles":["index.html","updates.js","configuration.html"],
+    "jsFolder":["main.js","creadencials.js"],
+    "cssFolder":["main.css"],
+    "appUpdate":false,
+    "updatesCounter":2,
+    "popupMessageContentHeader":" Private Message From Hanan",
+    "popupMessageContentBody":"Hello",
+    "popupMessage":"yaakovw",
+    "criticalUpdate":false,
+    "users":[]
+    
+}

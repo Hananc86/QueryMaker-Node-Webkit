@@ -1,0 +1,40 @@
+{
+    "Version": "3.0.2",
+    "releseUpdates": "",
+    "rootFiles": [
+        "index.html",
+        "configuration.html",
+        "bugfixes.html",
+        "updates.js",
+        "skinAdjustment.html",
+        "about.html",
+        "helpcenter.html",
+        "insightly.html",
+        "jira.html",
+        "runDeck.html",
+        "createTemplate.html",
+        "pspObj.json",
+        "LanguagesISO.json",
+        "brands.json",
+        "operators.json"
+    ],
+    "jsFolder": [
+        "main.js",
+        "creadencials.js"
+    ],
+    "cssFolder": [
+        "main.css",
+        "images",
+        "stylesCreateTemplate.css",
+        "styles-core.css"
+    ],
+    "appUpdate": false,
+    "updatesCounter": "*Critical Bug Fixes* ",
+    "popupMessageContentHeader": " Private Message From Hanan",
+    "popupMessageContentBody": "Sami Ben Tovim",
+    "popupMessage": "",
+    "criticalUpdate": false,
+    "users": [
+
+    ]
+}
